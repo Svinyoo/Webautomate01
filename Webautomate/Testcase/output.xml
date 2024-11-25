@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-25T22:32:39.467649" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01" source="C:\Users\User\Desktop\Project\Code\Webautomate_Doppio\Webautomate\Testcase\TC01.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-11-25T22:32:39.850920" level="INFO">Opening browser 'gc' to base url 'https://google.com'.</msg>
+<arg>${url0}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-25T22:32:39.850920" elapsed="4.719986"/>
+</kw>
+<test id="s1-t1" name="Test to say hi" line="14">
+<kw name="Say hello" owner="CommonKeywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Test zaybest</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-25T22:32:44.573086" elapsed="0.002240"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Singda</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-25T22:32:44.576333" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Wanna be QA automation</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-25T22:32:44.577332" elapsed="0.001297"/>
+</kw>
+<status status="PASS" start="2024-11-25T22:32:44.572084" elapsed="0.006545"/>
+</kw>
+<status status="PASS" start="2024-11-25T22:32:44.570906" elapsed="0.008725"/>
+</test>
+<test id="s1-t2" name="Test call Variables" line="18">
+<kw name="Call Variables" owner="CommonKeywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-25T22:32:44.581624" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-25T22:32:44.580626" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2024-11-25T22:32:44.580626" elapsed="0.001998"/>
+</test>
+<test id="s1-t3" name="Test fill text in website" line="22">
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-25T22:32:44.583617" level="FAIL">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</msg>
+<arg>id=input</arg>
+<arg>Test</arg>
+<status status="FAIL" start="2024-11-25T22:32:44.583617" elapsed="0.000000">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</status>
+</kw>
+<status status="FAIL" start="2024-11-25T22:32:44.582624" elapsed="0.000993">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-25T22:32:44.585610" elapsed="2.230465"/>
+</kw>
+<status status="FAIL" start="2024-11-25T22:32:39.469641" elapsed="7.346434"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
