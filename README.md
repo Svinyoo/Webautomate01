@@ -1,2 +1,2 @@
-# Websutomate01
+# Webautomate01
 Practice for web automation
