@@ -20,4 +20,5 @@ Test call Variables
 
 
 Test fill text in website
-    Input text  id=input    Test
+    #CommonKeywords.Click    xpath=//button[@aria-label="ออกจากระบบ"]
+    CommonKeywords.Input text    id=input   Test
