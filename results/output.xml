@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-27T14:46:06.156125" rpa="false" schemaversion="5">
+<suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
+<suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
+<suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
+<suite id="s1-s1-s1-s1" name="TC01" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TC01.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-11-27T14:46:06.434488" level="INFO">Opening browser 'gc' to base url 'https://www.doppiotech.com/'.</msg>
+<arg>${url0}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T14:46:06.434488" elapsed="9.104625"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Test click on website" line="22">
+<kw name="Click" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T14:46:15.547273" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
+<msg time="2024-11-27T14:46:17.169028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-27T14:46:17.170056" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (93, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-27T14:46:15.545052" elapsed="1.633630">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (93, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T14:46:19.179936" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
+<msg time="2024-11-27T14:46:20.802393" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-27T14:46:20.803388" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-27T14:46:19.178924" elapsed="1.626552">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T14:46:22.806248" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
+<msg time="2024-11-27T14:46:24.363539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-27T14:46:24.364533" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-27T14:46:22.805664" elapsed="1.560862">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T14:46:26.367045" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
+<msg time="2024-11-27T14:46:27.795322" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-27T14:46:27.795322" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-27T14:46:26.367045" elapsed="1.431944">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640B06CB5+28821]
+	(No symbol) [0x00007FF640A73840]
+	(No symbol) [0x00007FF64091578A]
+	(No symbol) [0x00007FF640970E8E]
+	(No symbol) [0x00007FF64096E92C]
+	(No symbol) [0x00007FF64096BAF6]
+	(No symbol) [0x00007FF64096AA51]
+	(No symbol) [0x00007FF64095CBA0]
+	(No symbol) [0x00007FF64098F2FA]
+	(No symbol) [0x00007FF64095C3F6]
+	(No symbol) [0x00007FF64098F510]
+	(No symbol) [0x00007FF6409AF412]
+	(No symbol) [0x00007FF64098F0A3]
+	(No symbol) [0x00007FF64095A778]
+	(No symbol) [0x00007FF64095B8E1]
+	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
+	GetHandleVerifier [0x00007FF640E5741F+3504127]
+	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
+	GetHandleVerifier [0x00007FF640BCBDBB+835995]
+	(No symbol) [0x00007FF640A7EB5F]
+	(No symbol) [0x00007FF640A7A814]
+	(No symbol) [0x00007FF640A7A9AD]
+	(No symbol) [0x00007FF640A6A199]
+	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
+	RtlUserThreadStart [0x00007FFA1BACAF38+40]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T14:46:29.800058" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-27T14:46:29.799048" elapsed="5.263643"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-11-27T14:46:15.544059" elapsed="19.519630"/>
+</kw>
+<arg>xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]</arg>
+<status status="PASS" start="2024-11-27T14:46:15.541066" elapsed="19.522623"/>
+</kw>
+<status status="PASS" start="2024-11-27T14:46:15.539113" elapsed="19.524576"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T14:46:35.066681" elapsed="2.257014"/>
+</kw>
+<status status="PASS" start="2024-11-27T14:46:06.204347" elapsed="31.119348"/>
+</suite>
+<status status="PASS" start="2024-11-27T14:46:06.200358" elapsed="31.133950"/>
+</suite>
+<status status="PASS" start="2024-11-27T14:46:06.196357" elapsed="31.147219"/>
+</suite>
+<status status="PASS" start="2024-11-27T14:46:06.163143" elapsed="31.183817"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TC01">Webautomate01.Webautomate.Testcase.TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

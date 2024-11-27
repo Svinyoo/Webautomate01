@@ -28,5 +28,4 @@ Click
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds   5x    2s    Click Element      ${locator}
 
-
 Verify element present
