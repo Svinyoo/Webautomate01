@@ -1,565 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-27T14:48:18.964280" rpa="false" schemaversion="5">
-<suite id="s1" name="TC01" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TC01.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-27T20:28:32.998356" rpa="false" schemaversion="5">
+<suite id="s1" name="TCDop00" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop00.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-27T14:48:19.245740" level="INFO">Opening browser 'gc' to base url 'https://www.doppiotech.com/'.</msg>
-<arg>${url0}</arg>
+<msg time="2024-11-27T20:28:33.355042" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex00.html'.</msg>
+<arg>${url00}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T14:48:19.244736" elapsed="11.210927"/>
+<status status="PASS" start="2024-11-27T20:28:33.347363" elapsed="2.372784"/>
 </kw>
-<test id="s1-t1" name="Test to say hi" line="14">
-<kw name="Say hello" owner="CommonKeywords">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Test zaybest</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-27T14:48:30.458639" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Singda</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-27T14:48:30.458639" elapsed="0.002984"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Wanna be QA automation</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-27T14:48:30.462631" elapsed="0.002007"/>
-</kw>
-<status status="PASS" start="2024-11-27T14:48:30.457673" elapsed="0.007947"/>
-</kw>
-<status status="PASS" start="2024-11-27T14:48:30.456649" elapsed="0.010966"/>
-</test>
-<test id="s1-t2" name="Test call Variables" line="18">
-<kw name="Call Variables" owner="CommonKeywords">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${message}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-27T14:48:30.470113" elapsed="0.001019"/>
-</kw>
-<status status="PASS" start="2024-11-27T14:48:30.470113" elapsed="0.001019"/>
-</kw>
-<status status="PASS" start="2024-11-27T14:48:30.468609" elapsed="0.002523"/>
-</test>
-<test id="s1-t3" name="Test click on website" line="22">
-<kw name="Click" owner="CommonKeywords">
+<test id="s1-t1" name="Input Username in the box" line="12">
+<kw name="Input text" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:30.476426" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
-<msg time="2024-11-27T14:48:32.139138" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:32.139138" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:30.475428" elapsed="1.667335">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:34.144147" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
-<msg time="2024-11-27T14:48:35.690301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:35.691716" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:34.143094" elapsed="1.549624">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:37.696612" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
-<msg time="2024-11-27T14:48:39.388589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:39.388589" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:37.694105" elapsed="1.695988">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:41.393503" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
-<msg time="2024-11-27T14:48:42.969268" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:42.970264" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:41.391721" elapsed="1.580048">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:44.972737" level="INFO">Clicking element 'xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]'.</msg>
-<msg time="2024-11-27T14:48:46.574576" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:46.574576" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:44.972234" elapsed="1.608100">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<msg time="2024-11-27T14:48:46.580334" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</msg>
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<msg time="2024-11-27T20:28:35.866172" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>5x</arg>
 <arg>2s</arg>
-<arg>Click Element</arg>
+<arg>Input Text</arg>
 <arg>${locator}</arg>
+<arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2024-11-27T14:48:30.475428" elapsed="16.106935">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
+<status status="FAIL" start="2024-11-27T20:28:35.866172" elapsed="0.000000">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<arg>xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]</arg>
-<status status="FAIL" start="2024-11-27T14:48:30.474429" elapsed="16.108937">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</kw>
-<status status="FAIL" start="2024-11-27T14:48:30.473434" elapsed="16.109932">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float" href="https://www.doppiotech.com/index.php/contact-us/"&gt;...&lt;/a&gt; is not clickable at point (118, 708). Other element would receive the click: &lt;div class="cwc-banner-title cwc-css-ta2nsy-cwc"&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.86)
-Stacktrace:
-	GetHandleVerifier [0x00007FF640B06CB5+28821]
-	(No symbol) [0x00007FF640A73840]
-	(No symbol) [0x00007FF64091578A]
-	(No symbol) [0x00007FF640970E8E]
-	(No symbol) [0x00007FF64096E92C]
-	(No symbol) [0x00007FF64096BAF6]
-	(No symbol) [0x00007FF64096AA51]
-	(No symbol) [0x00007FF64095CBA0]
-	(No symbol) [0x00007FF64098F2FA]
-	(No symbol) [0x00007FF64095C3F6]
-	(No symbol) [0x00007FF64098F510]
-	(No symbol) [0x00007FF6409AF412]
-	(No symbol) [0x00007FF64098F0A3]
-	(No symbol) [0x00007FF64095A778]
-	(No symbol) [0x00007FF64095B8E1]
-	GetHandleVerifier [0x00007FF640E3FCAD+3408013]
-	GetHandleVerifier [0x00007FF640E5741F+3504127]
-	GetHandleVerifier [0x00007FF640E4B5FD+3455453]
-	GetHandleVerifier [0x00007FF640BCBDBB+835995]
-	(No symbol) [0x00007FF640A7EB5F]
-	(No symbol) [0x00007FF640A7A814]
-	(No symbol) [0x00007FF640A7A9AD]
-	(No symbol) [0x00007FF640A6A199]
-	BaseThreadInitThunk [0x00007FFA1B5E259D+29]
-	RtlUserThreadStart [0x00007FFA1BACAF38+40]
-</status>
-</test>
-<test id="s1-t4" name="Test click on Test Automation Service" line="25">
-<kw name="Click" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:46.589355" level="INFO">Clicking element 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']'.</msg>
-<msg time="2024-11-27T14:48:47.168706" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:47.169489" level="FAIL">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
 <arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:46.589355" elapsed="0.625859">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:28:35.865174" elapsed="0.001995">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:49.215378" level="INFO">Clicking element 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']'.</msg>
-<msg time="2024-11-27T14:48:49.645690" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:49.645690" level="FAIL">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:28:37.869351" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:49.215378" elapsed="0.432377">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:28:37.867353" elapsed="0.001998">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:51.649709" level="INFO">Clicking element 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']'.</msg>
-<msg time="2024-11-27T14:48:52.029139" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:52.029139" level="FAIL">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:51.649201" elapsed="0.382486">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:54.033120" level="INFO">Clicking element 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']'.</msg>
-<msg time="2024-11-27T14:48:54.396008" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:54.396008" level="FAIL">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:54.032055" elapsed="0.364946">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T14:48:56.398379" level="INFO">Clicking element 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']'.</msg>
-<msg time="2024-11-27T14:48:56.929328" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-27T14:48:56.930835" level="FAIL">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-27T14:48:56.397352" elapsed="0.534507">Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
-</kw>
-<msg time="2024-11-27T14:48:56.931859" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</msg>
+<msg time="2024-11-27T20:28:39.869940" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>5x</arg>
 <arg>2s</arg>
-<arg>Click Element</arg>
+<arg>Input Text</arg>
 <arg>${locator}</arg>
+<arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2024-11-27T14:48:46.588372" elapsed="10.345642">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
+<status status="FAIL" start="2024-11-27T20:28:35.865174" elapsed="4.005817">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<arg>xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']</arg>
-<status status="FAIL" start="2024-11-27T14:48:46.588372" elapsed="10.345642">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:28:35.865174" elapsed="4.006810">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<status status="FAIL" start="2024-11-27T14:48:46.587351" elapsed="10.347663">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//a//a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/' and @target='_self' and @class='elementskit-btn whitespace--normal elementor-animation-']' not found.</status>
-</test>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T14:48:56.937003" elapsed="2.225624"/>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:28:41.876675" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:28:41.873573" elapsed="0.003102">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<status status="FAIL" start="2024-11-27T14:48:18.973030" elapsed="40.189597"/>
-</suite>
-<statistics>
-<total>
-<stat pass="2" fail="2" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="2" fail="2" skip="0" id="s1" name="TC01">TC01</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<msg time="2024-11-27T20:28:43.878429" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>

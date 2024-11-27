@@ -22,7 +22,7 @@ Call Variables
 Input text
     [Arguments]    ${locator}    ${text}
     Wait Until Keyword Succeeds   5x    2s    Input Text      ${locator}      ${text}
-    
+        
 
 Click
     [Arguments]    ${locator}
