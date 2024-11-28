@@ -10,6 +10,6 @@ Suite Teardown  Close Browser
 *** Test cases ***
 
 Input Username in the box
-    Input Text      id=username-box        Testfill
-
+    CommonKeywords.Inputsomething      id=username-box        Testfill
+    CommonKeywords.Inputsomething      id=password-box        PasswordistheBest
 
