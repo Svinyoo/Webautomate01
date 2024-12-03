@@ -19,14 +19,13 @@ Call Variables
     Log To Console          ${message}
 
 
-Input text
+Inputsomething
     [Arguments]    ${locator}    ${text}
     Wait Until Keyword Succeeds   5x    2s    Input Text      ${locator}      ${text}
-    
+        
 
 Click
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds   5x    2s    Click Element      ${locator}
-
 
 Verify element present

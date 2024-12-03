@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.1.1 (Python 3.12.3 on linux)" name="Generator">
+<meta content="Robot Framework 7.0 (Python 3.12.1 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all">
 :root {
@@ -1252,48 +1252,58 @@ window.stats = (function () {
             });
     }
     function calculatePercents(total, passed, failed, skipped) {
-        if (total == 0)
+        if (total == 0) {
             return [0.0, 0.0, 0.0];
+        }
         var pass = 100.0 * passed / total;
         var skip = 100.0 * skipped / total;
         var fail = 100.0 * failed / total;
         if (pass > 0 && pass < 0.1)
-            pass = 0.1;
+            pass = 0.1
         if (fail > 0 && fail < 0.1)
-            fail = 0.1;
+            fail = 0.1
         if (skip > 0 && skip < 0.1)
-            skip = 0.1;
+            skip = 0.1
         if (pass > 99.95 && pass < 100)
-            pass = 99.9;
+            pass = 99.9
         if (fail > 99.95 && fail < 100)
-            fail = 99.9;
+            fail = 99.9
         if (skip > 99.95 && skip < 100)
-            skip = 99.9;
-        return [round1(pass), round1(skip), round1(fail)];
+            skip = 99.9
+        return [Math.round(pass*10)/10, Math.round(skip*10)/10, Math.round(fail*10)/10];
     }
     function calculateWidths(num1, num2, num3) {
         if (num1 + num2 + num3 === 0)
             return [0.0, 0.0, 0.0];
         // Make small percentages better visible
         if (num1 > 0 && num1 < 1)
-            num1 = 1.0;
+            num1 = 1
         if (num2 > 0 && num2 < 1)
-            num2 = 1.0;
+            num2 = 1
         if (num3 > 0 && num3 < 1)
-            num3 = 1.0;
+            num3 = 1
         // Handle situation where some are rounded up
         while (num1 + num2 + num3 > 100) {
-            if (num1 >= num2 && num1 >= num3)
-                num1 = round1(num1 - 0.1);
-            else if (num2 >= num1 && num2 >= num3)
-                num2 = round1(num2 - 0.1);
-            else
-                num3 = round1(num3 - 0.1);
+            if (num1 > num2 && num1 > num3)
+                num1 -= 0.1;
+            else if (num2 > num1 && num2 > num3)
+                num2 -= 0.1;
+            else if (num3 > num1 && num3 > num2)
+                num3 -= 0.1;
+            else if (num1 > num3 && num1 == num2) {
+                num1 -= 0.1;
+                num2 -= 0.1;
+            }
+            else if (num1 > num2 && num1 == num3) {
+                num1 -= 0.1;
+                num3 -= 0.1;
+            }
+            else if (num2 > num1 && num2 == num3) {
+                num2 -= 0.1;
+                num3 -= 0.1;
+            }
         }
-        return [num1, num2, num3];
-    }
-    function round1(num) {
-        return Math.round(num*10) / 10;
+        return [Math.ceil(num1*10)/10, Math.ceil(num2*10)/10, Math.ceil(num3*10)/10];
     }
     return {
         Statistics: Statistics
@@ -2071,25 +2081,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,14878],[],[[4,0,0,[],[0,5135,9349,5],[[0,6,7,0,0,8,0,0,[0,5139,9337],[[0,9,10,0,11,12,0,0,[0,5141,9334],[[0,13,14,0,15,16,0,0,[0,5142,337],[[5146,2,17],[5455,2,18],[5457,5,19]]],[0,13,14,0,15,16,0,0,[0,7482,277],[[7484,2,17],[7753,2,20],[7754,5,19]]],[0,13,14,0,15,16,0,0,[0,9760,259],[[9762,2,17],[10013,2,21],[10014,5,19]]],[0,13,14,0,15,16,0,0,[0,12021,239],[[12025,2,17],[12253,2,22],[12254,5,19]]],[0,13,14,0,15,16,0,0,[0,14261,207],[[14264,2,17],[14465,2,23],[14466,5,19]]],[14469,5,5]]]]],[0,24,7,0,0,25,0,0,[3,14480,1],[]]]]],[[1,26,14,0,27,28,0,0,[1,647,4487],[[648,2,29]]],[2,30,14,0,31,0,0,0,[1,14493,385],[]]],[1,0,1,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,7468],[],[[4,0,0,[],[1,3971,849],[[0,5,6,0,0,7,0,0,[1,3976,832],[[0,8,9,0,10,11,0,0,[1,3978,830],[[0,12,13,0,14,15,0,0,[1,3980,827],[[3981,2,16]]]]]]]]]],[[1,17,13,0,18,19,0,0,[1,556,3414],[[558,2,20]]],[2,21,13,0,22,0,0,0,[1,4826,2641],[]]],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*TC01","*/home/trcloud/Desktop/Learn/Webautomate01/Webautomate/Testcase/TC01.robot","*Webautomate/Testcase/TC01.robot","*Test fill text in website","*Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[@aria-label=\"ออกจากระบบ\"]' not found.","*Click","*CommonKeywords","*xpath=//button[@aria-label=\"ออกจากระบบ\"]","*Wait Until Keyword Succeeds","*BuiltIn","*<p>Runs the specified keyword and retries if it fails.\x3c/p>","*5x    2s    Click Element    ${locator}","*Click Element","*SeleniumLibrary","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${locator}","*Clicking element 'xpath=//button[@aria-label=\"ออกจากระบบ\"]'.","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-6.png\"><img src=\"selenium-screenshot-6.png\" width=\"800px\">\x3c/a>","*Element with locator 'xpath=//button[@aria-label=\"ออกจากระบบ\"]' not found.","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-7.png\"><img src=\"selenium-screenshot-7.png\" width=\"800px\">\x3c/a>","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-8.png\"><img src=\"selenium-screenshot-8.png\" width=\"800px\">\x3c/a>","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-9.png\"><img src=\"selenium-screenshot-9.png\" width=\"800px\">\x3c/a>","*\x3c/td>\x3c/tr><tr><td colspan=\"3\"><a href=\"selenium-screenshot-10.png\"><img src=\"selenium-screenshot-10.png\" width=\"800px\">\x3c/a>","*Input text","*id=input    Test","*Open Browser","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${url0}    gc","*Opening browser 'gc' to base url '<a href=\"https://google.com\">https://google.com\x3c/a>'.","*Close Browser","*<p>Closes the current browser.\x3c/p>"]);
+window.output["strings"] = window.output["strings"].concat(["*","*TCDop03","*c:\\Users\\User\\Desktop\\Webautomate01\\Webautomate\\Testcase\\TCDop03.robot","eNqzSVTIKEpNs1VKy8xJtdLX13e20g8tTi0qBpP6LqnF2SX5BfrhqUmJpSX5uYklqQaGyDz9kNTikuTEYiDD2SW/wMBYryg/Kb9EyY665tnoJ9oBAOS9O7A=","*InputUsernamenaja","*Inputsomething","*CommonKeywords","*xpath=//div[contains(@v,'username')]/input    Zaybestsudlor","*Wait Until Keyword Succeeds","*BuiltIn","*<p>Runs the specified keyword and retries if it fails.\x3c/p>","*5x    2s    Input Text    ${locator}    ${text}","*Input Text","*SeleniumLibrary","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${locator}    ${text}","*Typing text 'Zaybestsudlor' into text field 'xpath=//div[contains(@v,'username')]/input'.","*Open Browser","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${url03}    gc","eNqtzLEOgjAURuFXuWHpxsW4EWSBXRbjaFr8gWrhNu0l+vgan8HlTF/OOWLz20wuySsjkZlHQyrkbAbtKZBpLC0J06mYfEDNzF3Nly/Nv3KP/FSJPCR5YFTu5A6+wtldZbWKWy8xemHE6sB4V8dy0TUU7T9vDdvWlB/dMUXZ","*Close Browser","*<p>Closes the current browser.\x3c/p>"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:09","fail":1,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:15","fail":1,"id":"s1","label":"TC01","name":"TC01","pass":0,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:01","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:00:07","fail":0,"id":"s1","label":"TCDop03","name":"TCDop03","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1732611332729;
+window.output["baseMillis"] = 1732808148613;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 14912;
+window.output["generated"] = 7509;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;

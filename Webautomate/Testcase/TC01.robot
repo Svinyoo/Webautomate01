@@ -19,6 +19,8 @@ Test call Variables
     Call Variables
 
 
-Test fill text in website
-    #CommonKeywords.Click    xpath=//button[@aria-label="ออกจากระบบ"]
-    CommonKeywords.Input text    id=input   Test
+Test click on website
+    CommonKeywords.Click    xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]
+
+Test click on Test Automation Service
+    CommonKeywords.Click    xpath=//div[a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/']]

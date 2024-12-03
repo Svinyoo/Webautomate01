@@ -1,70 +1,455 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-25T22:32:39.467649" rpa="false" schemaversion="5">
-<suite id="s1" name="TC01" source="C:\Users\User\Desktop\Project\Code\Webautomate_Doppio\Webautomate\Testcase\TC01.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-27T20:23:21.005538" rpa="false" schemaversion="5">
+<suite id="s1" name="TCDop00" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop00.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-25T22:32:39.850920" level="INFO">Opening browser 'gc' to base url 'https://google.com'.</msg>
-<arg>${url0}</arg>
+<msg time="2024-11-27T20:23:21.325573" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex00.html'.</msg>
+<arg>${url00}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-25T22:32:39.850920" elapsed="4.719986"/>
+<status status="PASS" start="2024-11-27T20:23:21.325573" elapsed="2.483553"/>
 </kw>
-<test id="s1-t1" name="Test to say hi" line="14">
-<kw name="Say hello" owner="CommonKeywords">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Test zaybest</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-25T22:32:44.573086" elapsed="0.002240"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Singda</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-25T22:32:44.576333" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Wanna be QA automation</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-25T22:32:44.577332" elapsed="0.001297"/>
-</kw>
-<status status="PASS" start="2024-11-25T22:32:44.572084" elapsed="0.006545"/>
-</kw>
-<status status="PASS" start="2024-11-25T22:32:44.570906" elapsed="0.008725"/>
-</test>
-<test id="s1-t2" name="Test call Variables" line="18">
-<kw name="Call Variables" owner="CommonKeywords">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${message}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-11-25T22:32:44.581624" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-11-25T22:32:44.580626" elapsed="0.000998"/>
-</kw>
-<status status="PASS" start="2024-11-25T22:32:44.580626" elapsed="0.001998"/>
-</test>
-<test id="s1-t3" name="Test fill text in website" line="22">
+<test id="s1-t1" name="Input Username in the box" line="12">
 <kw name="Input text" owner="CommonKeywords">
-<msg time="2024-11-25T22:32:44.583617" level="FAIL">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</msg>
-<arg>id=input</arg>
-<arg>Test</arg>
-<status status="FAIL" start="2024-11-25T22:32:44.583617" elapsed="0.000000">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</status>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<msg time="2024-11-27T20:23:23.860675" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.859685" elapsed="0.000990">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<status status="FAIL" start="2024-11-25T22:32:44.582624" elapsed="0.000993">Keyword 'CommonKeywords.Input text' expected 0 arguments, got 2.</status>
-</test>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-25T22:32:44.585610" elapsed="2.230465"/>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.859685" elapsed="0.000990">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<status status="FAIL" start="2024-11-25T22:32:39.469641" elapsed="7.346434"/>
-</suite>
-<statistics>
-<total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="TC01">TC01</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:25.863110" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:25.861110" elapsed="0.002000">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:27.863954" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.859685" elapsed="4.004269">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.858691" elapsed="4.006277">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:29.868582" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:29.865584" elapsed="0.002998">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:31.869712" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.858691" elapsed="8.011021">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.858691" elapsed="8.012033">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:33.872641" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:33.871017" elapsed="0.001624">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:35.872710" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.858691" elapsed="12.015024">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.857691" elapsed="12.016530">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:37.877258" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:37.875253" elapsed="0.002005">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:39.877410" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.857691" elapsed="16.019719">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.857691" elapsed="16.020794">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:41.880435" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:41.878830" elapsed="0.001605">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:43.882949" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.856695" elapsed="20.026254">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.855699" elapsed="20.028246">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:45.891017" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:45.888027" elapsed="0.002990">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:47.891735" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.855699" elapsed="24.037053">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.855699" elapsed="24.037053">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:49.896729" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:49.894764" elapsed="0.001965">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:51.898355" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.855699" elapsed="28.042656">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.854690" elapsed="28.044658">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:53.900712" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:53.899697" elapsed="0.002009">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:55.902265" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.854690" elapsed="32.047575">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.854690" elapsed="32.048590">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:23:57.905557" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:57.903557" elapsed="0.002000">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:23:59.905863" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.853178" elapsed="36.053690">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.853178" elapsed="36.053690">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:01.907830" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:01.907830" elapsed="0.000000">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:03.910103" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.853178" elapsed="40.056925">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.853178" elapsed="40.058466">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:05.913391" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:05.912343" elapsed="0.001048">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:07.915120" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.853178" elapsed="44.061942">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.852181" elapsed="44.063943">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:09.918921" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:09.916914" elapsed="0.002007">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:11.919824" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.852181" elapsed="48.067643">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.851162" elapsed="48.069666">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:13.922700" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:13.921688" elapsed="0.001012">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:15.922972" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.851162" elapsed="52.071810">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.851162" elapsed="52.072858">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:17.926577" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:17.924533" elapsed="0.002044">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:19.928174" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.851162" elapsed="56.077012">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.850656" elapsed="56.078486">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:21.930775" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:21.929720" elapsed="0.001055">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:23.932685" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.849660" elapsed="60.083025">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.849660" elapsed="60.083025">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:25.935449" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:25.934444" elapsed="0.001005">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:27.936959" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.848665" elapsed="64.088294">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.848665" elapsed="64.089290">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:29.939398" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:29.938330" elapsed="0.001068">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:31.940403" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2024-11-27T20:23:23.848665" elapsed="68.091738">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:23:23.847672" elapsed="68.093742">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Input text" owner="CommonKeywords">
+<msg time="2024-11-27T20:24:33.943323" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="FAIL" start="2024-11-27T20:24:33.942311" elapsed="0.001012">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<msg time="2024-11-27T20:24:35.944195" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>

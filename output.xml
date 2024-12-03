@@ -1,157 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.3 on linux)" generated="2024-11-26T15:56:07.510258" rpa="false" schemaversion="5">
-<suite id="s1" name="TC01" source="/home/trcloud/Desktop/Learn/Webautomate01/Webautomate/Testcase/TC01.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-28T22:35:48.600487" rpa="false" schemaversion="5">
+<suite id="s1" name="TCDop03" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop03.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-26T15:56:08.157681" level="INFO">Opening browser 'gc' to base url 'https://google.com'.</msg>
-<arg>${url0}</arg>
+<msg time="2024-11-28T22:35:49.171472" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex03.html'.</msg>
+<arg>${url03}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-26T15:56:08.154096" elapsed="5.327472"/>
+<status status="PASS" start="2024-11-28T22:35:49.168691" elapsed="3.413649"/>
 </kw>
-<test id="s1-t1" name="Test fill text in website" line="22">
-<kw name="Input text" owner="CommonKeywords">
+<test id="s1-t1" name="InputUsernamenaja" line="14">
+<kw name="Inputsomething" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input text" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<msg time="2024-11-26T15:56:14.005897" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-28T22:35:52.594438" level="INFO">Typing text 'Zaybestsudlor' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-28T22:35:52.593417" elapsed="0.826581"/>
+</kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Input Text</arg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2024-11-26T15:56:13.998913" elapsed="0.010885">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2024-11-28T22:35:52.591209" elapsed="0.829785"/>
 </kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="FAIL" start="2024-11-26T15:56:13.997299" elapsed="0.014792">Maximum limit of started keywords and control structures exceeded.</status>
+<arg>xpath=//div[contains(@v,'username')]/input</arg>
+<arg>Zaybestsudlor</arg>
+<status status="PASS" start="2024-11-28T22:35:52.589209" elapsed="0.831785"/>
 </kw>
-<kw name="Input text" owner="CommonKeywords">
-<msg time="2024-11-26T15:56:16.015073" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="FAIL" start="2024-11-26T15:56:16.013224" elapsed="0.003337">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2024-11-28T22:35:52.583704" elapsed="0.848789"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-28T22:35:53.438982" elapsed="2.641265"/>
 </kw>
-<msg time="2024-11-26T15:56:18.020211" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2024-11-26T15:56:13.996049" elapsed="4.024632">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="FAIL" start="2024-11-26T15:56:13.993609" elapsed="4.029965">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Input text" owner="CommonKeywords">
-<msg time="2024-11-26T15:56:20.032890" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="FAIL" start="2024-11-26T15:56:20.025171" elapsed="0.009175">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2024-11-26T15:56:22.047349" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2024-11-26T15:56:13.992323" elapsed="8.055481">
+<status status="PASS" start="2024-11-28T22:35:48.612989" elapsed="7.468252"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TCDop03">TCDop03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
