@@ -10,7 +10,8 @@ Suite Teardown  Close Browser
 *** Test cases ***
 
 FillUsername
-    CommonKeywords.Inputsomething   xpath=
+    CommonKeywords.Inputsomething   xpath=//div[span[@c='Username']]/input  Test try to FillUsername
+
 
 
 #<div>
@@ -20,7 +21,7 @@ FillUsername
 
   
 FillPassword
-    CommonKeywords.Inputsomething   xpath=
+    CommonKeywords.Inputsomething   xpath=//div[span[@c='Password']]/input  Test to FillPassword
 
 
 #<div>
