@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-28T22:35:48.600487" rpa="false" schemaversion="5">
-<suite id="s1" name="TCDop03" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop03.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-12-11T22:18:50.719166" rpa="false" schemaversion="5">
+<suite id="s1" name="TCExDop" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCExDop.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-28T22:35:49.171472" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex03.html'.</msg>
-<arg>${url03}</arg>
+<msg time="2024-12-11T22:18:50.973186" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ep01_small_excercise.html'.</msg>
+<arg>${urlex}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-28T22:35:49.168691" elapsed="3.413649"/>
+<status status="PASS" start="2024-12-11T22:18:50.973186" elapsed="2.002085"/>
 </kw>
-<test id="s1-t1" name="InputUsernamenaja" line="14">
+<test id="s1-t1" name="Fill Username" line="15">
 <kw name="Inputsomething" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-28T22:35:52.594438" level="INFO">Typing text 'Zaybestsudlor' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
+<msg time="2024-12-11T22:18:52.981306" level="INFO">Typing text 'Username-exercise' into text field 'id=username-box'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-28T22:35:52.593417" elapsed="0.826581"/>
+<status status="PASS" start="2024-12-11T22:18:52.980307" elapsed="0.217118"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
@@ -24,30 +24,140 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-11-28T22:35:52.591209" elapsed="0.829785"/>
+<status status="PASS" start="2024-12-11T22:18:52.979305" elapsed="0.219122"/>
 </kw>
-<arg>xpath=//div[contains(@v,'username')]/input</arg>
-<arg>Zaybestsudlor</arg>
-<status status="PASS" start="2024-11-28T22:35:52.589209" elapsed="0.831785"/>
+<arg>id=username-box</arg>
+<arg>Username-exercise</arg>
+<status status="PASS" start="2024-12-11T22:18:52.977299" elapsed="0.221128"/>
 </kw>
-<status status="PASS" start="2024-11-28T22:35:52.583704" elapsed="0.848789"/>
+<status status="PASS" start="2024-12-11T22:18:52.975271" elapsed="0.223156"/>
 </test>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-28T22:35:53.438982" elapsed="2.641265"/>
+<test id="s1-t2" name="Fill Password" line="18">
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T22:18:53.205870" level="INFO">Typing text 'Password-exercise' into text field 'xpath=//div[@v='password']/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T22:18:53.204909" elapsed="0.213292"/>
 </kw>
-<status status="PASS" start="2024-11-28T22:35:48.612989" elapsed="7.468252"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TCDop03">TCDop03</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-12-11T22:18:53.204909" elapsed="0.214299"/>
+</kw>
+<arg>xpath=//div[@v='password']/input</arg>
+<arg>Password-exercise</arg>
+<status status="PASS" start="2024-12-11T22:18:53.203871" elapsed="0.215337"/>
+</kw>
+<status status="PASS" start="2024-12-11T22:18:53.201872" elapsed="0.221403"/>
+</test>
+<test id="s1-t3" name="Fill Nickname" line="21">
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T22:18:53.431569" level="INFO">Typing text 'Zaybest' into text field 'xpath=//input[@doppio]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T22:18:53.430569" elapsed="0.143133"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-12-11T22:18:53.429563" elapsed="0.144139"/>
+</kw>
+<arg>xpath=//input[@doppio]</arg>
+<arg>Zaybest</arg>
+<status status="PASS" start="2024-12-11T22:18:53.428270" elapsed="0.146436"/>
+</kw>
+<status status="PASS" start="2024-12-11T22:18:53.428270" elapsed="0.146436"/>
+</test>
+<test id="s1-t4" name="Click Dropdown for select" line="24">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">

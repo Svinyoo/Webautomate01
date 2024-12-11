@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-28T22:40:16.029971" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-12-10T22:12:16.217989" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
-<suite id="s1-s1-s1-s1" name="TCDop03" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop03.robot">
+<suite id="s1-s1-s1-s1" name="TCDop05" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop05.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-11-28T22:40:16.416229" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex03.html'.</msg>
-<arg>${url03}</arg>
+<msg time="2024-12-10T22:12:16.475408" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex05.html'.</msg>
+<arg>${url05}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-28T22:40:16.415232" elapsed="2.752640"/>
+<status status="PASS" start="2024-12-10T22:12:16.474408" elapsed="2.057208"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="InputUsernamenaja" line="14">
+<test id="s1-s1-s1-s1-t1" name="Try to FillUsername" line="12">
 <kw name="Inputsomething" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-28T22:40:19.232260" level="INFO">Typing text 'Zaybestsudlor' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
+<msg time="2024-12-10T22:12:18.542305" level="INFO">Typing text 'Username is true' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-28T22:40:19.230220" elapsed="0.315651"/>
+<status status="PASS" start="2024-12-10T22:12:18.539789" elapsed="0.247707"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
@@ -27,61 +27,37 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-11-28T22:40:19.228716" elapsed="0.318160"/>
+<status status="PASS" start="2024-12-10T22:12:18.537789" elapsed="0.249707"/>
 </kw>
-<arg>xpath=//div[contains(@v,'username')]/input</arg>
-<arg>Zaybestsudlor</arg>
-<status status="PASS" start="2024-11-28T22:40:19.225731" elapsed="0.321145"/>
+<arg>xpath=//div[span[text()='User:']]/input</arg>
+<arg>Username is true</arg>
+<status status="PASS" start="2024-12-10T22:12:18.535788" elapsed="0.251708"/>
 </kw>
-<status status="PASS" start="2024-11-28T22:40:19.169379" elapsed="0.378495"/>
-</test>
-<test id="s1-s1-s1-s1-t2" name="InputPassword" line="22">
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-28T22:40:19.556635" level="INFO">Typing text 'password D T Sud' into text field 'xpath=//div[contains(@v,'password')]/input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-28T22:40:19.555639" elapsed="0.329467"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-11-28T22:40:19.553646" elapsed="0.332466"/>
-</kw>
-<arg>xpath=//div[contains(@v,'password')]/input</arg>
-<arg>password D T Sud</arg>
-<status status="PASS" start="2024-11-28T22:40:19.551644" elapsed="0.334468"/>
-</kw>
-<status status="PASS" start="2024-11-28T22:40:19.549381" elapsed="0.338728"/>
+<status status="PASS" start="2024-12-10T22:12:18.532780" elapsed="0.255715"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-28T22:40:19.894168" elapsed="2.513156"/>
+<status status="PASS" start="2024-12-10T22:12:18.792498" elapsed="2.221890"/>
 </kw>
-<status status="PASS" start="2024-11-28T22:40:16.101074" elapsed="6.307249"/>
+<status status="PASS" start="2024-12-10T22:12:16.259624" elapsed="4.755694"/>
 </suite>
-<status status="PASS" start="2024-11-28T22:40:16.096526" elapsed="6.314322"/>
+<status status="PASS" start="2024-12-10T22:12:16.254526" elapsed="4.765782"/>
 </suite>
-<status status="PASS" start="2024-11-28T22:40:16.092539" elapsed="6.320523"/>
+<status status="PASS" start="2024-12-10T22:12:16.251586" elapsed="4.772721"/>
 </suite>
-<status status="PASS" start="2024-11-28T22:40:16.045464" elapsed="6.368595"/>
+<status status="PASS" start="2024-12-10T22:12:16.226000" elapsed="4.801312"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="TCDop03">Webautomate01.Webautomate.Testcase.TCDop03</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TCDop05">Webautomate01.Webautomate.Testcase.TCDop05</stat>
 </suite>
 </statistics>
 <errors>

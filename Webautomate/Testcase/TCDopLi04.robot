@@ -10,4 +10,17 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 
 FillUsername
-    Inputsomething    $locator    $text
+    CommonKeywords.Inputsomething    xpath=//div[span[@c='Username']]/input    Testfillusername
+
+#<div>
+     #   <span c="Username">User:</span>  span กับ input อยู่ level เดียวกัน
+     #<input type="text">
+  #  </div>
+
+FillPassword 
+    CommonKeywords.Inputsomething    xpath=//div[span[@c='Password']]/input    Testfillpassword
+
+#<div>
+       # <span c="Password">Pass:</span>
+        # <input type="text">
+   # </div>
