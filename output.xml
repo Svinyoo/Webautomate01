@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-12-10T22:15:19.461952" rpa="false" schemaversion="5">
-<suite id="s1" name="TCDop05" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop05.robot">
+<robot generator="Robot 7.1.1 (Python 3.12.3 on linux)" generated="2024-12-11T16:20:09.129802" rpa="false" schemaversion="5">
+<suite id="s1" name="TCDopLi06" source="/home/trcloud/Desktop/git_base/Webautomate01/Webautomate/Testcase/TCDopLi06.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-12-10T22:15:19.726431" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex05.html'.</msg>
-<arg>${url05}</arg>
-<arg>gc</arg>
+<msg time="2024-12-11T16:20:09.783253" level="INFO">Opening browser 'chrome' to base url 'file:///home/trcloud/Desktop/Coding/Dop/ep01/ex06.html'.</msg>
+<arg>${urlli06}</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-10T22:15:19.725037" elapsed="1.938312"/>
+<status status="PASS" start="2024-12-11T16:20:09.782628" elapsed="4.505257"/>
 </kw>
-<test id="s1-t1" name="Try to FillUsername" line="12">
+<test id="s1-t1" name="Try to fill username" line="13">
 <kw name="Inputsomething" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-10T22:15:21.675192" level="INFO">Typing text 'Username is true' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
+<msg time="2024-12-11T16:20:14.300223" level="INFO">Typing text 'Zaybest' into text field 'xpath=//div[@k='abc' and @p='xyz']/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-10T22:15:21.674185" elapsed="0.222876"/>
+<status status="PASS" start="2024-12-11T16:20:14.297919" elapsed="0.662417"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
@@ -24,23 +24,23 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-10T22:15:21.673112" elapsed="0.223949"/>
+<status status="PASS" start="2024-12-11T16:20:14.293899" elapsed="0.667521"/>
 </kw>
-<arg>xpath=//div[span[text()='User:']]/input</arg>
-<arg>Username is true</arg>
-<status status="PASS" start="2024-12-10T22:15:21.670695" elapsed="0.226366"/>
+<arg>xpath=//div[@k='abc' and @p='xyz']/input</arg>
+<arg>Zaybest</arg>
+<status status="PASS" start="2024-12-11T16:20:14.292131" elapsed="0.670111"/>
 </kw>
-<status status="PASS" start="2024-12-10T22:15:21.663349" elapsed="0.234713"/>
+<status status="PASS" start="2024-12-11T16:20:14.289015" elapsed="0.674535"/>
 </test>
-<test id="s1-t2" name="Try to FillPassword" line="22">
+<test id="s1-t2" name="Try to fill password" line="20">
 <kw name="Inputsomething" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-10T22:15:21.905395" level="INFO">Typing text 'Password is the best' into text field 'xpath=//div[span[text()='Pass:']]/input'.</msg>
+<msg time="2024-12-11T16:20:14.986119" level="INFO">Typing text 'Eieiei' into text field 'xpath=//div[@k='abc' and contains(.,'Password:')]/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-10T22:15:21.905395" elapsed="0.191771"/>
+<status status="PASS" start="2024-12-11T16:20:14.979807" elapsed="0.270892"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
@@ -48,28 +48,48 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-10T22:15:21.904396" elapsed="0.193770"/>
+<status status="PASS" start="2024-12-11T16:20:14.978544" elapsed="0.273197"/>
 </kw>
-<arg>xpath=//div[span[text()='Pass:']]/input</arg>
-<arg>Password is the best</arg>
-<status status="PASS" start="2024-12-10T22:15:21.903390" elapsed="0.195971"/>
+<arg>xpath=//div[@k='abc' and contains(.,'Password:')]/input</arg>
+<arg>Eieiei</arg>
+<status status="PASS" start="2024-12-11T16:20:14.968179" elapsed="0.284594"/>
 </kw>
-<status status="PASS" start="2024-12-10T22:15:21.902062" elapsed="0.199467"/>
+<status status="PASS" start="2024-12-11T16:20:14.965583" elapsed="0.292250"/>
 </test>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-10T22:15:22.103529" elapsed="3.233799"/>
+<test id="s1-t3" name="Try to fill nickname" line="28">
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-11T16:20:15.277142" level="INFO">Typing text 'Yooyoooo' into text field 'xpath=//div[@p='xyz' and contains(.,'Nickname:')]/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-11T16:20:15.273949" elapsed="0.327153"/>
 </kw>
-<status status="PASS" start="2024-12-10T22:15:19.471439" elapsed="5.866812"/>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-12-11T16:20:15.266650" elapsed="0.336204"/>
+</kw>
+<arg>xpath=//div[@p='xyz' and contains(.,'Nickname:')]/input</arg>
+<arg>Yooyoooo</arg>
+<status status="PASS" start="2024-12-11T16:20:15.262406" elapsed="0.342864"/>
+</kw>
+<status status="PASS" start="2024-12-11T16:20:15.260534" elapsed="0.349486"/>
+</test>
+<status status="PASS" start="2024-12-11T16:20:09.144120" elapsed="6.469624"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TCDop05">TCDop05</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="TCDopLi06">TCDopLi06</stat>
 </suite>
 </statistics>
 <errors>
