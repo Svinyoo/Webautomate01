@@ -24,7 +24,7 @@ Inputsomething
     Wait Until Keyword Succeeds   5x    2s    Input Text      ${locator}      ${text}
         
 
-Click
+Click element
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds   5x    2s    Click Element      ${locator}
 
