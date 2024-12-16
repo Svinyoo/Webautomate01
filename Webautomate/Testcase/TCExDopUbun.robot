@@ -24,7 +24,7 @@ Fill Nickname
 Click Dropdown for select 
     Select From List By Label    company    Doppio          #xpath=//select[@name='com']/option[@value='doppio']
     Sleep    3s
-    Select From List By Index    com    3
+    Select From List By Index    com    3         # ***** is not chane to i want find way to fix it *****
     Sleep    3s
    # Select From List By Value    offpido 
   #  <select name="com" id="company">
