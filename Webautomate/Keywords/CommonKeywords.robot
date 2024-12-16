@@ -28,4 +28,10 @@ Click element
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds   5x    2s    Click Element      ${locator}
 
+
+Click but
+    [Arguments]    ${locator}
+    Wait Until Keyword Succeeds    1x    2s    Click Button    ${locator}    
+    
+
 Verify element present
