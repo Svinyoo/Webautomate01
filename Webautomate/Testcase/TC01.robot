@@ -11,16 +11,9 @@ Suite Teardown  Close Browser
 
 *** Test Cases ***
 
-Test to say hi
-    Say hello
 
-
-Test call Variables
-    Call Variables
-
-
-Test click on website
-    CommonKeywords.Click    xpath=//a[@class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"]
+Test click on website for accept cookies
+    CommonKeywords.Click but   xpath=//button[text()='Accept All']
 
 Test click on Test Automation Service
     CommonKeywords.Click    xpath=//div[a[@href='https://www.doppiotech.com/index.php/test-resource-outsource-2/']]
