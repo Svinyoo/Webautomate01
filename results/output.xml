@@ -1,65 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-12-10T22:12:16.217989" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-01-01T22:14:42.444002" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
-<suite id="s1-s1-s1-s1" name="TCDop05" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCDop05.robot">
+<suite id="s1-s1-s1-s1" name="TC01" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TC01.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-12-10T22:12:16.475408" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ex05.html'.</msg>
-<arg>${url05}</arg>
+<msg time="2025-01-01T22:14:42.703964" level="INFO">Opening browser 'gc' to base url 'https://www.doppiotech.com/'.</msg>
+<arg>${url0}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-10T22:12:16.474408" elapsed="2.057208"/>
+<status status="PASS" start="2025-01-01T22:14:42.702965" elapsed="8.457076"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="Try to FillUsername" line="12">
-<kw name="Inputsomething" owner="CommonKeywords">
+<test id="s1-s1-s1-s1-t1" name="Test click on website for accept cookies" line="15">
+<kw name="Click but" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-10T22:12:18.542305" level="INFO">Typing text 'Username is true' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-01-01T22:14:51.165967" level="INFO">Clicking button 'xpath=//button[text()='Accept All']'.</msg>
 <arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-10T22:12:18.539789" elapsed="0.247707"/>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-01T22:14:51.164998" elapsed="0.111865"/>
 </kw>
+<arg>1x</arg>
+<arg>2s</arg>
+<arg>Click Button</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-01T22:14:51.163965" elapsed="0.113896"/>
+</kw>
+<arg>xpath=//button[text()='Accept All']</arg>
+<status status="PASS" start="2025-01-01T22:14:51.162965" elapsed="0.114896"/>
+</kw>
+<status status="PASS" start="2025-01-01T22:14:51.160978" elapsed="0.117879"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Test click on Test Automation Service" line="18">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<msg time="2025-01-01T22:14:51.362748" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>5x</arg>
 <arg>2s</arg>
-<arg>Input Text</arg>
+<arg>Click Element</arg>
 <arg>${locator}</arg>
-<arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-10T22:12:18.537789" elapsed="0.249707"/>
+<status status="FAIL" start="2025-01-01T22:14:51.361754" elapsed="0.002000">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<arg>xpath=//div[span[text()='User:']]/input</arg>
-<arg>Username is true</arg>
-<status status="PASS" start="2024-12-10T22:12:18.535788" elapsed="0.251708"/>
+<arg>${locator}</arg>
+<status status="FAIL" start="2025-01-01T22:14:51.357762" elapsed="0.005992">Maximum limit of started keywords and control structures exceeded.</status>
 </kw>
-<status status="PASS" start="2024-12-10T22:12:18.532780" elapsed="0.255715"/>
-</test>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-10T22:12:18.792498" elapsed="2.221890"/>
-</kw>
-<status status="PASS" start="2024-12-10T22:12:16.259624" elapsed="4.755694"/>
-</suite>
-<status status="PASS" start="2024-12-10T22:12:16.254526" elapsed="4.765782"/>
-</suite>
-<status status="PASS" start="2024-12-10T22:12:16.251586" elapsed="4.772721"/>
-</suite>
-<status status="PASS" start="2024-12-10T22:12:16.226000" elapsed="4.801312"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TCDop05">Webautomate01.Webautomate.Testcase.TCDop05</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<kw name="Click element" owner="CommonKeywords">
+<msg time="2025-01-01T22:14:53.365991" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${locator}</arg>
