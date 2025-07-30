@@ -1,160 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-07-23T22:43:57.885617" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-07-30T16:27:26.298940" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
-<suite id="s1-s1-s1-s1" name="TCExDop" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\TCExDop.robot">
+<suite id="s1-s1-s1-s1" name="THwatsadu" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\THwatsadu.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-07-23T22:43:58.170686" level="INFO">Opening browser 'gc' to base url 'file:///C:/Users/User/Desktop/Project/Code/Webautomate_Doppio/ep01/ep01_small_excercise.html'.</msg>
-<arg>${urlex}</arg>
-<arg>gc</arg>
+<msg time="2025-07-30T16:27:26.633518" level="INFO">Opening browser 'chrome' to base url 'https://www.thaiwatsadu.com/'.</msg>
+<arg>https://www.thaiwatsadu.com/</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-23T22:43:58.170686" elapsed="2.680131"/>
+<status status="PASS" start="2025-07-30T16:27:26.633518" elapsed="4.005649"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="Fill Username" line="15">
+<test id="s1-s1-s1-s1-t1" name="Click to continue" line="18">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-30T16:27:40.645121" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-30T16:27:30.642164" elapsed="10.003576"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-07-30T16:27:44.140765" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a3b7e415+77285]
+	GetHandleVerifier [0x0x7ff6a3b7e470+77376]
+	(No symbol) [0x0x7ff6a3949a6a]
+	(No symbol) [0x0x7ff6a3921f21]
+	(No symbol) [0x0x7ff6a39cf9be]
+	(No symbol) [0x0x7ff6a39f0192]
+	(No symbol) [0x0x7ff6a39c83e3]
+	(No symbol) [0x0x7ff6a3991521]
+	(No symbol) [0x0x7ff6a39922b3]
+	GetHandleVerifier [0x0x7ff6a3e61efd+3107021]
+	GetHandleVerifier [0x0x7ff6a3e5c29d+3083373]
+	GetHandleVerifier [0x0x7ff6a3e7bedd+3213485]
+	GetHandleVerifier [0x0x7ff6a3b9884e+184862]
+	GetHandleVerifier [0x0x7ff6a3ba055f+216879]
+	GetHandleVerifier [0x0x7ff6a3b87084+113236]
+	GetHandleVerifier [0x0x7ff6a3b87239+113673]
+	GetHandleVerifier [0x0x7ff6a3b6e298+11368]
+	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
+	RtlUserThreadStart [0x0x7ffb9293c34c+44]
+</msg>
+<msg time="2025-07-30T16:27:44.161349" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a3b7e415+77285]
+	GetHandleVerifier [0x0x7ff6a3b7e470+77376]
+	(No symbol) [0x0x7ff6a3949a6a]
+	(No symbol) [0x0x7ff6a3921f21]
+	(No symbol) [0x0x7ff6a39cf9be]
+	(No symbol) [0x0x7ff6a39f0192]
+	(No symbol) [0x0x7ff6a39c83e3]
+	(No symbol) [0x0x7ff6a3991521]
+	(No symbol) [0x0x7ff6a39922b3]
+	GetHandleVerifier [0x0x7ff6a3e61efd+3107021]
+	GetHandleVerifier [0x0x7ff6a3e5c29d+3083373]
+	GetHandleVerifier [0x0x7ff6a3e7bedd+3213485]
+	GetHandleVerifier [0x0x7ff6a3b9884e+184862]
+	GetHandleVerifier [0x0x7ff6a3ba055f+216879]
+	GetHandleVerifier [0x0x7ff6a3b87084+113236]
+	GetHandleVerifier [0x0x7ff6a3b87239+113673]
+	GetHandleVerifier [0x0x7ff6a3b6e298+11368]
+	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
+	RtlUserThreadStart [0x0x7ffb9293c34c+44]
+</msg>
+<arg>xpath=//div[@class='cms-wrapper']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-07-30T16:27:40.647948" elapsed="3.704453">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a3b7e415+77285]
+	GetHandleVerifier [0x0x7ff6a3b7e470+77376]
+	(No symbol) [0x0x7ff6a3949a6a]
+	(No symbol) [0x0x7ff6a3921f21]
+	(No symbol) [0x0x7ff6a39cf9be]
+	(No symbol) [0x0x7ff6a39f0192]
+	(No symbol) [0x0x7ff6a39c83e3]
+	(No symbol) [0x0x7ff6a3991521]
+	(No symbol) [0x0x7ff6a39922b3]
+	GetHandleVerifier [0x0x7ff6a3e61efd+3107021]
+	GetHandleVerifier [0x0x7ff6a3e5c29d+3083373]
+	GetHandleVerifier [0x0x7ff6a3e7bedd+3213485]
+	GetHandleVerifier [0x0x7ff6a3b9884e+184862]
+	GetHandleVerifier [0x0x7ff6a3ba055f+216879]
+	GetHandleVerifier [0x0x7ff6a3b87084+113236]
+	GetHandleVerifier [0x0x7ff6a3b87239+113673]
+	GetHandleVerifier [0x0x7ff6a3b6e298+11368]
+	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
+	RtlUserThreadStart [0x0x7ffb9293c34c+44]
+</status>
+</kw>
+<kw name="Sleep 3s">
+<status status="NOT RUN" start="2025-07-30T16:27:44.364989" elapsed="0.004011"/>
+</kw>
+<kw name="Click element" owner="CommonKeywords">
+<arg>xpath=//div[@class='bi bi-x font-extrabold text-2xl text-white']</arg>
+<status status="NOT RUN" start="2025-07-30T16:27:44.393170" elapsed="0.001006"/>
+</kw>
+<kw name="Sleep 3s">
+<status status="NOT RUN" start="2025-07-30T16:27:44.415910" elapsed="0.003575"/>
+</kw>
 <kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-23T22:44:00.857651" level="INFO">Typing text 'Username-exercise' into text field 'id=username-box'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-23T22:44:00.856557" elapsed="0.164181"/>
+<arg>id= search-input</arg>
+<arg>Windows</arg>
+<status status="NOT RUN" start="2025-07-30T16:27:44.428820" elapsed="0.000504"/>
 </kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-07-23T22:44:00.855295" elapsed="0.165443"/>
-</kw>
-<arg>id=username-box</arg>
-<arg>Username-exercise</arg>
-<status status="PASS" start="2025-07-23T22:44:00.852817" elapsed="0.167921"/>
-</kw>
-<status status="PASS" start="2025-07-23T22:44:00.850817" elapsed="0.170929"/>
+<status status="FAIL" start="2025-07-30T16:27:30.640175" elapsed="13.790739">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a3b7e415+77285]
+	GetHandleVerifier [0x0x7ff6a3b7e470+77376]
+	(No symbol) [0x0x7ff6a3949a6a]
+	(No symbol) [0x0x7ff6a3921f21]
+	(No symbol) [0x0x7ff6a39cf9be]
+	(No symbol) [0x0x7ff6a39f0192]
+	(No symbol) [0x0x7ff6a39c83e3]
+	(No symbol) [0x0x7ff6a3991521]
+	(No symbol) [0x0x7ff6a39922b3]
+	GetHandleVerifier [0x0x7ff6a3e61efd+3107021]
+	GetHandleVerifier [0x0x7ff6a3e5c29d+3083373]
+	GetHandleVerifier [0x0x7ff6a3e7bedd+3213485]
+	GetHandleVerifier [0x0x7ff6a3b9884e+184862]
+	GetHandleVerifier [0x0x7ff6a3ba055f+216879]
+	GetHandleVerifier [0x0x7ff6a3b87084+113236]
+	GetHandleVerifier [0x0x7ff6a3b87239+113673]
+	GetHandleVerifier [0x0x7ff6a3b6e298+11368]
+	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
+	RtlUserThreadStart [0x0x7ffb9293c34c+44]
+</status>
 </test>
-<test id="s1-s1-s1-s1-t2" name="Fill Password" line="18">
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-23T22:44:01.027760" level="INFO">Typing text 'Password-exercise' into text field 'xpath=//div[@v='password']/input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-23T22:44:01.025768" elapsed="0.147346"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-07-23T22:44:01.025768" elapsed="0.148349"/>
-</kw>
-<arg>xpath=//div[@v='password']/input</arg>
-<arg>Password-exercise</arg>
-<status status="PASS" start="2025-07-23T22:44:01.024770" elapsed="0.149347"/>
-</kw>
-<status status="PASS" start="2025-07-23T22:44:01.022752" elapsed="0.152360"/>
-</test>
-<test id="s1-s1-s1-s1-t3" name="Fill Nickname" line="21">
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-23T22:44:01.188794" level="INFO">Typing text 'Zaybest' into text field 'xpath=//input[@doppio]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-23T22:44:01.186810" elapsed="0.161708"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-07-23T22:44:01.184805" elapsed="0.163713"/>
-</kw>
-<arg>xpath=//input[@doppio]</arg>
-<arg>Zaybest</arg>
-<status status="PASS" start="2025-07-23T22:44:01.182814" elapsed="0.165704"/>
-</kw>
-<status status="PASS" start="2025-07-23T22:44:01.179822" elapsed="0.169723"/>
-</test>
-<test id="s1-s1-s1-s1-t4" name="Click Dropdown for select" line="24">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<status status="FAIL" start="2025-07-30T16:27:26.353221" elapsed="18.092845"/>
+</suite>
+<status status="FAIL" start="2025-07-30T16:27:26.346947" elapsed="18.114146"/>
+</suite>
+<status status="FAIL" start="2025-07-30T16:27:26.343048" elapsed="18.128053"/>
+</suite>
+<status status="FAIL" start="2025-07-30T16:27:26.304148" elapsed="18.174959"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="THwatsadu">Webautomate01.Webautomate.Testcase.THwatsadu</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-30T16:27:44.140765" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6a3b7e415+77285]
+	GetHandleVerifier [0x0x7ff6a3b7e470+77376]
+	(No symbol) [0x0x7ff6a3949a6a]
+	(No symbol) [0x0x7ff6a3921f21]
+	(No symbol) [0x0x7ff6a39cf9be]
+	(No symbol) [0x0x7ff6a39f0192]
+	(No symbol) [0x0x7ff6a39c83e3]
+	(No symbol) [0x0x7ff6a3991521]
+	(No symbol) [0x0x7ff6a39922b3]
+	GetHandleVerifier [0x0x7ff6a3e61efd+3107021]
+	GetHandleVerifier [0x0x7ff6a3e5c29d+3083373]
+	GetHandleVerifier [0x0x7ff6a3e7bedd+3213485]
+	GetHandleVerifier [0x0x7ff6a3b9884e+184862]
+	GetHandleVerifier [0x0x7ff6a3ba055f+216879]
+	GetHandleVerifier [0x0x7ff6a3b87084+113236]
+	GetHandleVerifier [0x0x7ff6a3b87239+113673]
+	GetHandleVerifier [0x0x7ff6a3b6e298+11368]
+	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
+	RtlUserThreadStart [0x0x7ffb9293c34c+44]
+</msg>
+</errors>
+</robot>
