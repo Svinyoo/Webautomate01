@@ -1,4 +1,4 @@
-*** Settings ***  # ย้ายมานี้ดีกว่า https://the-internet.herokuapp.com/
+*** Settings ***  
 
 Library     SeleniumLibrary
 Resource    ../Keywords/CommonKeywords.robot
@@ -17,9 +17,9 @@ ${OPTIONS}    add_argument=--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64
 
 Click to continue
     Sleep   10s
-    Wait Until Element Is Visible   xpath=//a[@class='imh-logo imh-logo-nav']
+    Wait Until Element Is Visible   xpath=//div[@class="home-banner"]/a/img[@class="banner-image"]
     Sleep   3s
-    CommonKeywords.Click element    xpath=//span[@class='imh-ds-icon']
+    Click Element    xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]
     Sleep   3s
    # CommonKeywords.Inputsomething   id= search-input    Windows
     
