@@ -1,417 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-01T14:56:12.821887" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-01T16:48:14.884572" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
 <suite id="s1-s1-s1-s1" name="Myself01" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Myself01.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-08-01T14:56:13.090560" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-08-01T16:48:15.149508" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${Url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-01T14:56:13.090560" elapsed="6.520054"/>
+<status status="PASS" start="2025-08-01T16:48:15.148496" elapsed="7.487569"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Click to continue" line="18">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T14:56:29.621986" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
+<msg time="2025-08-01T16:48:27.640197" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T14:56:19.621254" elapsed="10.001296"/>
+<status status="PASS" start="2025-08-01T16:48:22.638588" elapsed="5.002123"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@class="home-banner"]/a/img[@class="banner-image"]</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-01T14:56:29.624801" elapsed="0.048098"/>
+<status status="PASS" start="2025-08-01T16:48:27.640711" elapsed="0.071037"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T14:56:32.674713" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2025-08-01T16:48:29.714609" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T14:56:29.673919" elapsed="3.000794"/>
+<status status="PASS" start="2025-08-01T16:48:27.713360" elapsed="2.001249"/>
 </kw>
-<kw name="Click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-01T16:48:29.715776" elapsed="0.035170"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click element" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<msg time="2025-08-01T14:56:32.740232" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-01T16:48:29.755089" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-01T16:48:29.754560" elapsed="0.182702"/>
+</kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.739729" elapsed="0.000503">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2025-08-01T16:48:29.753515" elapsed="0.183747"/>
 </kw>
+<arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
+<status status="PASS" start="2025-08-01T16:48:29.753515" elapsed="0.183747"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-01T16:48:31.938973" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-01T16:48:29.937262" elapsed="2.001711"/>
+</kw>
+<status status="PASS" start="2025-08-01T16:48:22.637081" elapsed="9.301892"/>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Go to form" line="28">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-01T16:48:36.943730" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-01T16:48:31.943165" elapsed="5.001188"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-01T16:48:36.948713" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]'.</msg>
 <arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.738220" elapsed="0.003394">Maximum limit of started keywords and control structures exceeded.</status>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-01T16:48:36.947140" elapsed="0.102143"/>
 </kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:34.743727" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:34.742216" elapsed="0.002547">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:56:36.746714" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.738220" elapsed="4.010051">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2025-08-01T16:48:36.947140" elapsed="0.102143"/>
 </kw>
+<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]</arg>
+<status status="PASS" start="2025-08-01T16:48:36.944959" elapsed="0.105711"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-01T16:48:37.050670" elapsed="0.455382"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-01T16:48:37.507150" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]'.</msg>
 <arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.738220" elapsed="4.010051">Maximum limit of started keywords and control structures exceeded.</status>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.123943"/>
 </kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:38.750116" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:38.748471" elapsed="0.002197">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:56:40.751192" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.737223" elapsed="8.015133">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.123943"/>
 </kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.737223" elapsed="8.016212">Maximum limit of started keywords and control structures exceeded.</status>
+<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
+<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.124945"/>
 </kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:42.754978" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:42.753672" elapsed="0.001306">Maximum limit of started keywords and control structures exceeded.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-01T16:48:47.632545" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-01T16:48:37.632095" elapsed="10.000450"/>
 </kw>
-<msg time="2025-08-01T14:56:44.756187" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.736273" elapsed="12.022307">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="PASS" start="2025-08-01T16:48:31.941000" elapsed="15.691545"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-01T16:48:47.634976" elapsed="2.619772"/>
 </kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.735237" elapsed="12.024497">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:46.763656" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:46.760644" elapsed="0.003012">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:56:48.765664" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.734231" elapsed="16.033457">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.731666" elapsed="16.036022">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:50.770583" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:50.769030" elapsed="0.002095">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:56:52.771941" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.731131" elapsed="20.041874">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.728736" elapsed="20.044269">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:54.774561" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:54.773472" elapsed="0.002198">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:56:56.776266" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.728736" elapsed="24.050076">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.728736" elapsed="24.051179">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:56:58.782489" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:58.780889" elapsed="0.002709">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:00.783884" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.728736" elapsed="28.055674">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.728736" elapsed="28.056697">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:02.788192" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:02.786686" elapsed="0.003013">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:04.791039" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.727640" elapsed="32.064789">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.727640" elapsed="32.065699">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:06.795009" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:06.795009" elapsed="0.001164">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:08.796570" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.727640" elapsed="36.068930">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.726542" elapsed="36.071043">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:10.800272" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:10.799251" elapsed="0.002087">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:12.801687" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.726542" elapsed="40.076254">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.726542" elapsed="40.076254">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:14.803262" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:14.803262" elapsed="0.000000">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:16.805332" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.726542" elapsed="44.079840">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.725461" elapsed="44.080921">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:18.807859" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:18.806681" elapsed="0.002691">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:20.810561" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.725461" elapsed="48.086659">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.725461" elapsed="48.086659">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:22.815790" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:22.813108" elapsed="0.003707">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:24.817231" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.725461" elapsed="52.092849">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.724410" elapsed="52.093900">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:26.819384" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:26.818383" elapsed="0.001001">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:28.820170" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.724410" elapsed="56.096759">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.724410" elapsed="56.097892">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:30.824851" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:30.823614" elapsed="0.002233">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:32.826241" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.724410" elapsed="60.101831">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.724410" elapsed="60.101831">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:34.829079" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:34.827848" elapsed="0.001803">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:36.830321" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.723417" elapsed="64.106904">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.723417" elapsed="64.107924">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:38.831936" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:57:38.831936" elapsed="0.001011">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<msg time="2025-08-01T14:57:40.833639" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="FAIL" start="2025-08-01T14:56:32.723417" elapsed="68.110729">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2025-08-01T14:56:32.722288" elapsed="68.111858">Maximum limit of started keywords and control structures exceeded.</status>
-</kw>
-<kw name="Click element" owner="CommonKeywords">
-<msg time="2025-08-01T14:57:42.835926" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<arg>${locator}</arg>
+<status status="PASS" start="2025-08-01T16:48:14.932162" elapsed="35.322586"/>
+</suite>
+<status status="PASS" start="2025-08-01T16:48:14.927766" elapsed="35.330742"/>
+</suite>
+<status status="PASS" start="2025-08-01T16:48:14.925467" elapsed="35.340067"/>
+</suite>
+<status status="PASS" start="2025-08-01T16:48:14.891162" elapsed="35.377132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="Myself01">Webautomate01.Webautomate.Testcase.Myself01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
