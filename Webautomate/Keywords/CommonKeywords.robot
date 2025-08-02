@@ -34,4 +34,6 @@ Click but
     Wait Until Keyword Succeeds    1x    2s    Click Button    ${locator}    
     
 
-Verify element present
+Choose
+    [Arguments]    ${locator}
+    Wait Until Keyword Succeeds    1x    2s    Select Checkbox    ${locator}

@@ -3,7 +3,7 @@
 Library     SeleniumLibrary
 Resource    ../Keywords/CommonKeywords.robot
 Variables   ../Resources/Config.yaml
-#Variables   ../Resources/Data.yaml
+Variables   ../Resources/Data.yaml
 
 Suite Setup     Open Browser    ${Url}       chrome   # options=${OPTIONS}
 Suite Teardown  Close Browser 
@@ -30,4 +30,18 @@ Go to form
     CommonKeywords.Click ele   xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"] 
     Wait Until Element Is Visible    xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]     timeout=10s   
     CommonKeywords.Click ele   xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]   
-    Sleep   10s
+    Sleep   3s
+
+Fill form
+    Sleep   2s
+    Wait Until Element Is Visible   id=userName-label   timeout=5s
+    CommonKeywords.Click ele    id=firstName
+    Sleep   1s
+ #Name and LastName
+    CommonKeywords.Inputsomething   id=firstName    ${Name0}
+    CommonKeywords.Inputsomething   id=lastName     ${LastName0}
+    Sleep   1s
+#Email
+    CommonKeywords.Inputsomething   id=userEmail    ${Email}    
+#Gender
+    CommonKeywords.Choose   xpath=//input[@id="gender-radio-1"]

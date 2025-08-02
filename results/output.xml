@@ -1,147 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-01T16:48:14.884572" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-02T21:52:56.358427" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
 <suite id="s1-s1-s1-s1" name="Myself01" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Myself01.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-08-01T16:48:15.149508" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-08-02T21:52:56.629604" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${Url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-01T16:48:15.148496" elapsed="7.487569"/>
+<status status="PASS" start="2025-08-02T21:52:56.629604" elapsed="6.290013"/>
 </kw>
 <test id="s1-s1-s1-s1-t1" name="Click to continue" line="18">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T16:48:27.640197" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-08-02T21:53:07.929786" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T16:48:22.638588" elapsed="5.002123"/>
+<status status="PASS" start="2025-08-02T21:53:02.929143" elapsed="5.001159"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@class="home-banner"]/a/img[@class="banner-image"]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-01T16:48:27.640711" elapsed="0.071037"/>
+<status status="PASS" start="2025-08-02T21:53:07.931460" elapsed="0.050839"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T16:48:29.714609" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-02T21:53:09.984094" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T16:48:27.713360" elapsed="2.001249"/>
+<status status="PASS" start="2025-08-02T21:53:07.982299" elapsed="2.002902"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-01T16:48:29.715776" elapsed="0.035170"/>
+<status status="PASS" start="2025-08-02T21:53:09.986281" elapsed="0.053272"/>
 </kw>
 <kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-01T16:48:29.755089" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
+<msg time="2025-08-02T21:53:10.042968" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-01T16:48:29.754560" elapsed="0.182702"/>
+<status status="PASS" start="2025-08-02T21:53:10.042968" elapsed="0.173149"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-01T16:48:29.753515" elapsed="0.183747"/>
+<status status="PASS" start="2025-08-02T21:53:10.041826" elapsed="0.174291"/>
 </kw>
 <arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
-<status status="PASS" start="2025-08-01T16:48:29.753515" elapsed="0.183747"/>
+<status status="PASS" start="2025-08-02T21:53:10.041826" elapsed="0.174291"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T16:48:31.938973" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-02T21:53:12.217459" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T16:48:29.937262" elapsed="2.001711"/>
+<status status="PASS" start="2025-08-02T21:53:10.217159" elapsed="2.000836"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:48:22.637081" elapsed="9.301892"/>
+<status status="PASS" start="2025-08-02T21:53:02.920622" elapsed="9.298416"/>
 </test>
 <test id="s1-s1-s1-s1-t2" name="Go to form" line="28">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T16:48:36.943730" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-08-02T21:53:17.232500" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T16:48:31.943165" elapsed="5.001188"/>
+<status status="PASS" start="2025-08-02T21:53:12.231015" elapsed="5.002656"/>
 </kw>
 <kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-01T16:48:36.948713" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]'.</msg>
+<msg time="2025-08-02T21:53:17.239549" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-01T16:48:36.947140" elapsed="0.102143"/>
+<status status="PASS" start="2025-08-02T21:53:17.237139" elapsed="0.091805"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-01T16:48:36.947140" elapsed="0.102143"/>
+<status status="PASS" start="2025-08-02T21:53:17.235962" elapsed="0.094414"/>
 </kw>
 <arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]</arg>
-<status status="PASS" start="2025-08-01T16:48:36.944959" elapsed="0.105711"/>
+<status status="PASS" start="2025-08-02T21:53:17.234740" elapsed="0.095636"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-01T16:48:37.050670" elapsed="0.455382"/>
+<status status="PASS" start="2025-08-02T21:53:17.331647" elapsed="0.487721"/>
 </kw>
 <kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-01T16:48:37.507150" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]'.</msg>
+<msg time="2025-08-02T21:53:17.823522" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.123943"/>
+<status status="PASS" start="2025-08-02T21:53:17.822457" elapsed="0.121502"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.123943"/>
+<status status="PASS" start="2025-08-02T21:53:17.822457" elapsed="0.121502"/>
 </kw>
 <arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
-<status status="PASS" start="2025-08-01T16:48:37.507150" elapsed="0.124945"/>
+<status status="PASS" start="2025-08-02T21:53:17.821403" elapsed="0.123559"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-01T16:48:47.632545" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
+<msg time="2025-08-02T21:53:20.945245" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-01T16:48:37.632095" elapsed="10.000450"/>
+<status status="PASS" start="2025-08-02T21:53:17.944962" elapsed="3.000791"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:48:31.941000" elapsed="15.691545"/>
+<status status="PASS" start="2025-08-02T21:53:12.226679" elapsed="8.720592"/>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Fill form" line="35">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T21:53:22.965866" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T21:53:20.965628" elapsed="2.000797"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=userName-label</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-02T21:53:22.969044" elapsed="0.049230"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-02T21:53:23.022565" level="INFO">Clicking element 'id=firstName'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T21:53:23.022565" elapsed="0.104980"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-02T21:53:23.021433" elapsed="0.106112"/>
+</kw>
+<arg>id=firstName</arg>
+<status status="PASS" start="2025-08-02T21:53:23.019286" elapsed="0.108259"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T21:53:24.129557" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T21:53:23.128923" elapsed="1.001731"/>
+</kw>
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T21:53:24.135296" level="INFO">Typing text 'Tester' into text field 'id=firstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T21:53:24.133815" elapsed="0.103488"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-02T21:53:24.132737" elapsed="0.105728"/>
+</kw>
+<arg>id=firstName</arg>
+<arg>${Name0}</arg>
+<status status="PASS" start="2025-08-02T21:53:24.131711" elapsed="0.106754"/>
+</kw>
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T21:53:24.241648" level="INFO">Typing text 'Supertesting' into text field 'id=lastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T21:53:24.240641" elapsed="0.131616"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-02T21:53:24.240641" elapsed="0.131616"/>
+</kw>
+<arg>id=lastName</arg>
+<arg>${LastName0}</arg>
+<status status="PASS" start="2025-08-02T21:53:24.239610" elapsed="0.132647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-02T21:53:25.374807" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-02T21:53:24.373694" elapsed="1.002219"/>
+</kw>
+<kw name="Inputsomething" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-02T21:53:25.380978" level="INFO">Typing text 'Testerkodlnw' into text field 'id=userEmail'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-02T21:53:25.378987" elapsed="0.138804"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-02T21:53:25.378987" elapsed="0.138804"/>
+</kw>
+<arg>id=userEmail</arg>
+<arg>${Email}</arg>
+<status status="PASS" start="2025-08-02T21:53:25.376993" elapsed="0.140798"/>
+</kw>
+<kw name="Choose" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-02T21:53:25.520846" level="INFO">Selecting checkbox 'xpath=//input[@id="gender-radio-1"]'.</msg>
+<msg time="2025-08-02T21:53:25.693622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-02T21:53:25.694628" level="FAIL">Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="FAIL" start="2025-08-02T21:53:25.519835" elapsed="0.184380">Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</status>
+</kw>
+<msg time="2025-08-02T21:53:25.704215" level="FAIL">Keyword 'Select Checkbox' failed after retrying 1 time. The last error was: Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</msg>
+<arg>1x</arg>
+<arg>2s</arg>
+<arg>Select Checkbox</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-08-02T21:53:25.518817" elapsed="0.191013">Keyword 'Select Checkbox' failed after retrying 1 time. The last error was: Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</status>
+</kw>
+<arg>xpath=//input[@id="gender-radio-1"]</arg>
+<status status="FAIL" start="2025-08-02T21:53:25.518817" elapsed="0.192018">Keyword 'Select Checkbox' failed after retrying 1 time. The last error was: Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-08-02T21:53:20.957839" elapsed="4.754024">Keyword 'Select Checkbox' failed after retrying 1 time. The last error was: Checkbox with locator 'xpath=//input[@id="gender-radio-1"]' not found.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-08-01T16:48:47.634976" elapsed="2.619772"/>
+<status status="PASS" start="2025-08-02T21:53:25.722237" elapsed="2.387179"/>
 </kw>
-<status status="PASS" start="2025-08-01T16:48:14.932162" elapsed="35.322586"/>
+<status status="FAIL" start="2025-08-02T21:52:56.417083" elapsed="31.692333"/>
 </suite>
-<status status="PASS" start="2025-08-01T16:48:14.927766" elapsed="35.330742"/>
+<status status="FAIL" start="2025-08-02T21:52:56.407049" elapsed="31.712418"/>
 </suite>
-<status status="PASS" start="2025-08-01T16:48:14.925467" elapsed="35.340067"/>
+<status status="FAIL" start="2025-08-02T21:52:56.400996" elapsed="31.728370"/>
 </suite>
-<status status="PASS" start="2025-08-01T16:48:14.891162" elapsed="35.377132"/>
+<status status="FAIL" start="2025-08-02T21:52:56.364877" elapsed="31.777702"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1-s1-s1" name="Myself01">Webautomate01.Webautomate.Testcase.Myself01</stat>
+<stat pass="2" fail="1" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s1-s1-s1" name="Myself01">Webautomate01.Webautomate.Testcase.Myself01</stat>
 </suite>
 </statistics>
 <errors>
