@@ -37,3 +37,11 @@ Click but
 Choose
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds    1x    2s    Select Checkbox    ${locator}
+
+Choose label
+    [Arguments]    ${locator}    ${text}
+    Wait Until Keyword Succeeds   5x    2s    Select From List By Label      ${locator}      ${text}
+
+Uploadfile
+    [Arguments]    ${locator}    ${file_path}
+    Wait Until Keyword Succeeds   1x    2s    Choose File      ${locator}      ${file_path}
