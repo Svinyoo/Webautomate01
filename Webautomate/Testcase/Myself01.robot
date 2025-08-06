@@ -63,7 +63,7 @@ Fill form Info
 
 Fill form inner-info 
  #Subject
-    CommonKeywords.Click ele    xpath=//div[@class="subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3"]   
+    CommonKeywords.Click ele    xpath=//div[@class="subjects-auto-complete__control css-yk16xz-control"]   
     CommonKeywords.Inputsomething   id=subjectsInput        ${Subject1}
     Wait Until Element Is Visible    xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"]   timeout=5s
     CommonKeywords.Click ele     xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"][1]
@@ -78,3 +78,16 @@ Fill form inner-info
     CommonKeywords.Click ele    xpath=//label[@for="hobbies-checkbox-3"]  
  #Choosefile Upload pic.
     CommonKeywords.Uploadfile   id=uploadPicture    C:/Users/User/Pictures/456591.jpg
+ #Address
+   CommonKeywords.Click ele   id=currentAddress
+   CommonKeywords.Inputsomething    id=currentAddress    ${Address1}
+ #Select State and City
+   CommonKeywords.Click ele   id=state
+   Wait Until Element Is Visible    xpath=//div[@class=" css-11unzgr"]  timeout=5s
+   CommonKeywords.Click ele   xpath=//div[@class=" css-1n7v3ny-option"]
+   Sleep    1s 
+   CommonKeywords.Click ele   id=city
+   CommonKeywords.Click ele   xpath=//div[@class=" css-yt9ioa-option"]
+
+Press Submit Form
+   CommonKeywords.Click but   id=submit   
