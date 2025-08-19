@@ -1,149 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-04T16:54:33.220468" rpa="false" schemaversion="5">
-<suite id="s1" name="Myself01" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Myself01.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-19T14:24:25.898566" rpa="false" schemaversion="5">
+<suite id="s1" name="Slider" source="c:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Slider.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-08-04T16:54:33.893821" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
-<msg time="2025-08-04T16:54:42.787130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: 'NoneType' object has no attribute 'encode'</msg>
-<msg time="2025-08-04T16:54:42.800172" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: chrome=138.0.7204.184)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff75c37e415+77285]
-	GetHandleVerifier [0x0x7ff75c37e470+77376]
-	(No symbol) [0x0x7ff75c14989c]
-	(No symbol) [0x0x7ff75c13703b]
-	(No symbol) [0x0x7ff75c134c68]
-	(No symbol) [0x0x7ff75c1356cf]
-	(No symbol) [0x0x7ff75c144855]
-	(No symbol) [0x0x7ff75c15a2b1]
-	(No symbol) [0x0x7ff75c16141a]
-	(No symbol) [0x0x7ff75c135e6d]
-	(No symbol) [0x0x7ff75c1599b3]
-	(No symbol) [0x0x7ff75c1f0bb8]
-	(No symbol) [0x0x7ff75c1c83e3]
-	(No symbol) [0x0x7ff75c191521]
-	(No symbol) [0x0x7ff75c1922b3]
-	GetHandleVerifier [0x0x7ff75c661efd+3107021]
-	GetHandleVerifier [0x0x7ff75c65c29d+3083373]
-	GetHandleVerifier [0x0x7ff75c67bedd+3213485]
-	GetHandleVerifier [0x0x7ff75c39884e+184862]
-	GetHandleVerifier [0x0x7ff75c3a055f+216879]
-	GetHandleVerifier [0x0x7ff75c387084+113236]
-	GetHandleVerifier [0x0x7ff75c387239+113673]
-	GetHandleVerifier [0x0x7ff75c36e298+11368]
-	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
-	RtlUserThreadStart [0x0x7ffb9293c34c+44]
-</msg>
+<msg time="2025-08-19T14:24:26.173942" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${Url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2025-08-04T16:54:33.892313" elapsed="9.216925">WebDriverException: Message: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: chrome=138.0.7204.184)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff75c37e415+77285]
-	GetHandleVerifier [0x0x7ff75c37e470+77376]
-	(No symbol) [0x0x7ff75c14989c]
-	(No symbol) [0x0x7ff75c13703b]
-	(No symbol) [0x0x7ff75c134c68]
-	(No symbol) [0x0x7ff75c1356cf]
-	(No symbol) [0x0x7ff75c144855]
-	(No symbol) [0x0x7ff75c15a2b1]
-	(No symbol) [0x0x7ff75c16141a]
-	(No symbol) [0x0x7ff75c135e6d]
-	(No symbol) [0x0x7ff75c1599b3]
-	(No symbol) [0x0x7ff75c1f0bb8]
-	(No symbol) [0x0x7ff75c1c83e3]
-	(No symbol) [0x0x7ff75c191521]
-	(No symbol) [0x0x7ff75c1922b3]
-	GetHandleVerifier [0x0x7ff75c661efd+3107021]
-	GetHandleVerifier [0x0x7ff75c65c29d+3083373]
-	GetHandleVerifier [0x0x7ff75c67bedd+3213485]
-	GetHandleVerifier [0x0x7ff75c39884e+184862]
-	GetHandleVerifier [0x0x7ff75c3a055f+216879]
-	GetHandleVerifier [0x0x7ff75c387084+113236]
-	GetHandleVerifier [0x0x7ff75c387239+113673]
-	GetHandleVerifier [0x0x7ff75c36e298+11368]
-	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
-	RtlUserThreadStart [0x0x7ffb9293c34c+44]
-</status>
+<status status="PASS" start="2025-08-19T14:24:26.173396" elapsed="7.815260"/>
 </kw>
-<test id="s1-t1" name="Fill form Info" line="35">
-<status status="FAIL" start="2025-08-04T16:54:43.111238" elapsed="0.053481">Parent suite setup failed:
-WebDriverException: Message: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: chrome=138.0.7204.184)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff75c37e415+77285]
-	GetHandleVerifier [0x0x7ff75c37e470+77376]
-	(No symbol) [0x0x7ff75c14989c]
-	(No symbol) [0x0x7ff75c13703b]
-	(No symbol) [0x0x7ff75c134c68]
-	(No symbol) [0x0x7ff75c1356cf]
-	(No symbol) [0x0x7ff75c144855]
-	(No symbol) [0x0x7ff75c15a2b1]
-	(No symbol) [0x0x7ff75c16141a]
-	(No symbol) [0x0x7ff75c135e6d]
-	(No symbol) [0x0x7ff75c1599b3]
-	(No symbol) [0x0x7ff75c1f0bb8]
-	(No symbol) [0x0x7ff75c1c83e3]
-	(No symbol) [0x0x7ff75c191521]
-	(No symbol) [0x0x7ff75c1922b3]
-	GetHandleVerifier [0x0x7ff75c661efd+3107021]
-	GetHandleVerifier [0x0x7ff75c65c29d+3083373]
-	GetHandleVerifier [0x0x7ff75c67bedd+3213485]
-	GetHandleVerifier [0x0x7ff75c39884e+184862]
-	GetHandleVerifier [0x0x7ff75c3a055f+216879]
-	GetHandleVerifier [0x0x7ff75c387084+113236]
-	GetHandleVerifier [0x0x7ff75c387239+113673]
-	GetHandleVerifier [0x0x7ff75c36e298+11368]
-	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
-	RtlUserThreadStart [0x0x7ffb9293c34c+44]
-</status>
+<test id="s1-t1" name="Click to continue" line="15">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-19T14:24:34.992369" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-19T14:24:33.990636" elapsed="1.002285"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@class="home-banner"]/a/img[@class="banner-image"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-19T14:24:34.993478" elapsed="0.075638"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-19T14:24:37.070849" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-19T14:24:35.069116" elapsed="2.001733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-19T14:24:37.071355" elapsed="0.029687"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-19T14:24:37.102074" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-19T14:24:37.102074" elapsed="0.205036"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-19T14:24:37.102074" elapsed="0.205036"/>
+</kw>
+<arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
+<status status="PASS" start="2025-08-19T14:24:37.102074" elapsed="0.206344"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-19T14:24:39.310768" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-19T14:24:37.309563" elapsed="2.001205"/>
+</kw>
+<status status="PASS" start="2025-08-19T14:24:33.989635" elapsed="5.322520"/>
 </test>
-<status status="FAIL" start="2025-08-04T16:54:33.236562" elapsed="9.975576">Suite setup failed:
-WebDriverException: Message: unknown error: cannot determine loading status
-from target frame detached
-  (Session info: chrome=138.0.7204.184)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff75c37e415+77285]
-	GetHandleVerifier [0x0x7ff75c37e470+77376]
-	(No symbol) [0x0x7ff75c14989c]
-	(No symbol) [0x0x7ff75c13703b]
-	(No symbol) [0x0x7ff75c134c68]
-	(No symbol) [0x0x7ff75c1356cf]
-	(No symbol) [0x0x7ff75c144855]
-	(No symbol) [0x0x7ff75c15a2b1]
-	(No symbol) [0x0x7ff75c16141a]
-	(No symbol) [0x0x7ff75c135e6d]
-	(No symbol) [0x0x7ff75c1599b3]
-	(No symbol) [0x0x7ff75c1f0bb8]
-	(No symbol) [0x0x7ff75c1c83e3]
-	(No symbol) [0x0x7ff75c191521]
-	(No symbol) [0x0x7ff75c1922b3]
-	GetHandleVerifier [0x0x7ff75c661efd+3107021]
-	GetHandleVerifier [0x0x7ff75c65c29d+3083373]
-	GetHandleVerifier [0x0x7ff75c67bedd+3213485]
-	GetHandleVerifier [0x0x7ff75c39884e+184862]
-	GetHandleVerifier [0x0x7ff75c3a055f+216879]
-	GetHandleVerifier [0x0x7ff75c387084+113236]
-	GetHandleVerifier [0x0x7ff75c387239+113673]
-	GetHandleVerifier [0x0x7ff75c36e298+11368]
-	BaseThreadInitThunk [0x0x7ffb91f1e8d7+23]
-	RtlUserThreadStart [0x0x7ffb9293c34c+44]
-</status>
+<test id="s1-t2" name="Go to Slider" line="23">
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-19T14:24:39.318906" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-19T14:24:39.318906" elapsed="0.239107"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-19T14:24:39.317906" elapsed="0.241115"/>
+</kw>
+<arg>xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]</arg>
+<status status="PASS" start="2025-08-19T14:24:39.316898" elapsed="0.243137"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-19T14:24:40.575965" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-19T14:24:39.571630" elapsed="1.005934"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-19T14:24:40.581075" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-19T14:24:40.581075" elapsed="0.098821"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-19T14:24:40.580205" elapsed="0.099691"/>
+</kw>
+<arg>xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]</arg>
+<status status="PASS" start="2025-08-19T14:24:40.578708" elapsed="0.101188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-19T14:24:41.682078" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-19T14:24:40.680935" elapsed="1.001143"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-19T14:24:41.686510" level="INFO">Clicking element 'xpath=//div//span[text()='Slider']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-19T14:24:41.685018" elapsed="0.112425"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-19T14:24:41.685018" elapsed="0.112425"/>
+</kw>
+<arg>xpath=//div//span[text()='Slider']</arg>
+<status status="PASS" start="2025-08-19T14:24:41.683681" elapsed="0.113762"/>
+</kw>
+<status status="PASS" start="2025-08-19T14:24:39.314886" elapsed="2.484043"/>
+</test>
+<status status="PASS" start="2025-08-19T14:24:25.906846" elapsed="15.894329"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Myself01">Myself01</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Slider">Slider</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-08-04T16:54:42.787130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: 'NoneType' object has no attribute 'encode'</msg>
 </errors>
 </robot>
