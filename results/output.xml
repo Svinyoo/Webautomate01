@@ -1,798 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-19T14:02:09.008757" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2025-08-22T17:05:34.099137" rpa="false" schemaversion="5">
 <suite id="s1" name="Webautomate01" source="C:\Users\User\Desktop\Webautomate01">
 <suite id="s1-s1" name="Webautomate" source="C:\Users\User\Desktop\Webautomate01\Webautomate">
 <suite id="s1-s1-s1" name="Testcase" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase">
-<suite id="s1-s1-s1-s1" name="Myself01" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Myself01.robot">
+<suite id="s1-s1-s1-s1" name="Slider" source="C:\Users\User\Desktop\Webautomate01\Webautomate\Testcase\Slider.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-08-19T14:02:09.392071" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2025-08-22T17:05:34.399066" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${Url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-19T14:02:09.391053" elapsed="6.903080"/>
+<status status="PASS" start="2025-08-22T17:05:34.398034" elapsed="6.118491"/>
 </kw>
-<test id="s1-s1-s1-s1-t1" name="Click to continue" line="18">
+<test id="s1-s1-s1-s1-t1" name="Click to continue" line="19">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:19.313825" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
+<msg time="2025-08-22T17:05:41.529903" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:16.311953" elapsed="3.001872"/>
+<status status="PASS" start="2025-08-22T17:05:40.528557" elapsed="1.001346"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@class="home-banner"]/a/img[@class="banner-image"]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:19.315261" elapsed="0.036529"/>
+<status status="PASS" start="2025-08-22T17:05:41.530940" elapsed="0.067190"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:21.354240" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-22T17:05:43.599462" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:19.352305" elapsed="2.001935"/>
+<status status="PASS" start="2025-08-22T17:05:41.598130" elapsed="2.002450"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:21.357349" elapsed="0.036979"/>
+<status status="PASS" start="2025-08-22T17:05:43.601851" elapsed="0.027296"/>
 </kw>
 <kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:21.400494" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
+<msg time="2025-08-22T17:05:43.632639" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:21.399479" elapsed="0.251761"/>
+<status status="PASS" start="2025-08-22T17:05:43.632639" elapsed="0.158471"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:21.398144" elapsed="0.253604"/>
+<status status="PASS" start="2025-08-22T17:05:43.631632" elapsed="0.159478"/>
 </kw>
 <arg>xpath=//div[@id="app"]/div/div/div[@class="home-body"]/div/div[4]</arg>
-<status status="PASS" start="2025-08-19T14:02:21.397146" elapsed="0.254602"/>
+<status status="PASS" start="2025-08-22T17:05:43.630195" elapsed="0.160915"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:23.654399" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-22T17:05:45.793008" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:21.652893" elapsed="2.001506"/>
+<status status="PASS" start="2025-08-22T17:05:43.792618" elapsed="2.000390"/>
 </kw>
-<status status="PASS" start="2025-08-19T14:02:16.296677" elapsed="7.359238"/>
+<status status="PASS" start="2025-08-22T17:05:40.517976" elapsed="5.277107"/>
 </test>
-<test id="s1-s1-s1-s1-t2" name="Go to form" line="28">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:25.683330" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:23.680339" elapsed="2.004035"/>
-</kw>
+<test id="s1-s1-s1-s1-t2" name="Go to Slider" line="27">
 <kw name="Click ele" owner="CommonKeywords">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:25.687735" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]'.</msg>
+<msg time="2025-08-22T17:05:45.815103" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:25.686707" elapsed="0.089551"/>
+<status status="PASS" start="2025-08-22T17:05:45.815103" elapsed="0.094231"/>
 </kw>
 <arg>5x</arg>
 <arg>2s</arg>
 <arg>Click Element</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:25.686707" elapsed="0.089551"/>
+<status status="PASS" start="2025-08-22T17:05:45.812852" elapsed="0.096482"/>
 </kw>
-<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/span[@class="group-header"]</arg>
-<status status="PASS" start="2025-08-19T14:02:25.685371" elapsed="0.092788"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:25.779318" elapsed="0.469818"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:26.250582" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:26.250582" elapsed="0.119368"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:26.250582" elapsed="0.119368"/>
-</kw>
-<arg>xpath=//div[@id="app"]/div/div/div/div/div/div/div[2]/div[@class="element-list collapse show"]</arg>
-<status status="PASS" start="2025-08-19T14:02:26.249136" elapsed="0.120814"/>
+<arg>xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]</arg>
+<status status="PASS" start="2025-08-22T17:05:45.811909" elapsed="0.098445"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:27.372087" level="INFO">Slept 1 second.</msg>
+<msg time="2025-08-22T17:05:46.913129" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:26.370956" elapsed="1.002145"/>
+<status status="PASS" start="2025-08-22T17:05:45.911357" elapsed="1.001772"/>
 </kw>
-<status status="PASS" start="2025-08-19T14:02:23.666930" elapsed="3.707173"/>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-22T17:05:46.920684" level="INFO">Clicking element 'xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-22T17:05:46.919564" elapsed="0.114114"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-22T17:05:46.918559" elapsed="0.115119"/>
+</kw>
+<arg>xpath=//div[@id="app"]/div/div/div/div[1]/div/div/div[4]/span[@class="group-header"]</arg>
+<status status="PASS" start="2025-08-22T17:05:46.917179" elapsed="0.117529"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-22T17:05:48.039372" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-22T17:05:47.038851" elapsed="1.000521"/>
+</kw>
+<kw name="Click ele" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-22T17:05:48.044075" level="INFO">Clicking element 'xpath=//div//span[text()='Slider']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-22T17:05:48.042523" elapsed="0.087566"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-08-22T17:05:48.040934" elapsed="0.089155"/>
+</kw>
+<arg>xpath=//div//span[text()='Slider']</arg>
+<status status="PASS" start="2025-08-22T17:05:48.039913" elapsed="0.091473"/>
+</kw>
+<status status="PASS" start="2025-08-22T17:05:45.800981" elapsed="2.330405"/>
 </test>
-<test id="s1-s1-s1-s1-t3" name="Fill form Info" line="35">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:29.388159" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:27.386941" elapsed="2.001779"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id=userName-label</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:29.389758" elapsed="0.030104"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:29.421901" level="INFO">Clicking element 'id=firstName'.</msg>
+<test id="s1-s1-s1-s1-t3" name="Set Slider" line="37">
+<kw name="Set Slider Value">
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2025-08-22T17:05:48.165313" level="INFO">${slider} = &lt;selenium.webdriver.remote.webelement.WebElement (session="ba349b541cf6aa4514b8ecfb7d7d7816", element="f.23AE97637E42FAF256034DF800AA6832.d.802B040085020A23B889D3C98F282E7F.e.55")&gt;</msg>
+<var>${slider}</var>
 <arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:29.420899" elapsed="0.082034"/>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2025-08-22T17:05:48.147339" elapsed="0.017974"/>
 </kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:29.420899" elapsed="0.083033"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-08-22T17:05:48.311715" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-22T17:05:48.312710" level="FAIL">TypeError: sequence item 1: expected str instance, WebElement found</msg>
+<arg>arguments[0].value = ${value}; arguments[0].dispatchEvent(new Event('input')); arguments[0].dispatchEvent(new Event('change'));</arg>
+<arg>${slider}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-08-22T17:05:48.166318" elapsed="0.157756">TypeError: sequence item 1: expected str instance, WebElement found</status>
 </kw>
-<arg>id=firstName</arg>
-<status status="PASS" start="2025-08-19T14:02:29.420899" elapsed="0.084183"/>
+<arg>xpath=//input[@type="range"]</arg>
+<arg>10</arg>
+<status status="FAIL" start="2025-08-22T17:05:48.143919" elapsed="0.180155">TypeError: sequence item 1: expected str instance, WebElement found</status>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:30.507438" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:29.506149" elapsed="1.001804"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:30.513080" level="INFO">Typing text 'Tester' into text field 'id=firstName'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:30.512046" elapsed="0.138560"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:30.511467" elapsed="0.139139"/>
-</kw>
-<arg>id=firstName</arg>
-<arg>${Name0}</arg>
-<status status="PASS" start="2025-08-19T14:02:30.509962" elapsed="0.140644"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:30.653141" level="INFO">Typing text 'Supertesting' into text field 'id=lastName'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:30.653141" elapsed="0.122377"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:30.652113" elapsed="0.123913"/>
-</kw>
-<arg>id=lastName</arg>
-<arg>${LastName0}</arg>
-<status status="PASS" start="2025-08-19T14:02:30.652113" elapsed="0.123913"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:31.778844" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:30.778276" elapsed="1.001079"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:31.782021" level="INFO">Typing text 'TesterkodlnwSudsudloei@gmail.com' into text field 'id=userEmail'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:31.781486" elapsed="0.187758"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:31.780361" elapsed="0.188883"/>
-</kw>
-<arg>id=userEmail</arg>
-<arg>${Email}</arg>
-<status status="PASS" start="2025-08-19T14:02:31.779355" elapsed="0.189889"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:31.973283" level="INFO">Clicking element 'xpath=//label[@for="gender-radio-1"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:31.971795" elapsed="0.112306"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:31.970685" elapsed="0.113940"/>
-</kw>
-<arg>xpath=//label[@for="gender-radio-1"]</arg>
-<status status="PASS" start="2025-08-19T14:02:31.970685" elapsed="0.113940"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:32.086194" level="INFO">Clicking element 'id=userNumber'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:32.086194" elapsed="0.145020"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:32.085675" elapsed="0.145539"/>
-</kw>
-<arg>id=userNumber</arg>
-<status status="PASS" start="2025-08-19T14:02:32.085675" elapsed="0.145539"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:32.234247" level="INFO">Typing text '0875554444' into text field 'id=userNumber'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:32.234247" elapsed="0.113633"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:32.233250" elapsed="0.114630"/>
-</kw>
-<arg>id=userNumber</arg>
-<arg>${Tel}</arg>
-<status status="PASS" start="2025-08-19T14:02:32.232222" elapsed="0.115658"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:33.350880" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:32.349375" elapsed="1.001505"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:33.355320" level="INFO">Clicking element 'id=dateOfBirthInput'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.353902" elapsed="0.205762"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.353902" elapsed="0.205762"/>
-</kw>
-<arg>id=dateOfBirthInput</arg>
-<status status="PASS" start="2025-08-19T14:02:33.352894" elapsed="0.208867"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//select[@class="react-datepicker__month-select"]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.561761" elapsed="0.038190"/>
-</kw>
-<kw name="Choose label" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:33.603969" level="INFO">Selecting options from selection list 'xpath=//select[@class="react-datepicker__month-select"]' by label January.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.602461" elapsed="0.176765"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Select From List By Label</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.601952" elapsed="0.177274"/>
-</kw>
-<arg>xpath=//select[@class="react-datepicker__month-select"]</arg>
-<arg>January</arg>
-<status status="PASS" start="2025-08-19T14:02:33.600952" elapsed="0.179273"/>
-</kw>
-<kw name="Choose label" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:33.782233" level="INFO">Selecting options from selection list 'xpath=//select[@class="react-datepicker__year-select"]' by label 1998.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.782233" elapsed="0.088484"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Select From List By Label</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.781226" elapsed="0.091019"/>
-</kw>
-<arg>xpath=//select[@class="react-datepicker__year-select"]</arg>
-<arg>1998</arg>
-<status status="PASS" start="2025-08-19T14:02:33.780225" elapsed="0.092020"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:34.874619" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:33.873522" elapsed="1.001097"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:34.879896" level="INFO">Clicking element 'xpath=//div[@class="react-datepicker__day react-datepicker__day--001"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:34.878840" elapsed="0.127629"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:34.878840" elapsed="0.127629"/>
-</kw>
-<arg>xpath=//div[@class="react-datepicker__day react-datepicker__day--001"]</arg>
-<status status="PASS" start="2025-08-19T14:02:34.877669" elapsed="0.128800"/>
-</kw>
-<status status="PASS" start="2025-08-19T14:02:27.381979" elapsed="7.624490"/>
+<status status="FAIL" start="2025-08-22T17:05:48.139668" elapsed="0.185424">TypeError: sequence item 1: expected str instance, WebElement found</status>
 </test>
-<test id="s1-s1-s1-s1-t4" name="Fill form inner-info" line="64">
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.019034" level="INFO">Clicking element 'xpath=//div[@class="subjects-auto-complete__control css-yk16xz-control"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.019034" elapsed="0.080313"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.017544" elapsed="0.081803"/>
-</kw>
-<arg>xpath=//div[@class="subjects-auto-complete__control css-yk16xz-control"]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.017544" elapsed="0.081803"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<test id="s1-s1-s1-s1-t4" name="Set Slider by input" line="42">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.100578" level="INFO">Typing text 'Ph' into text field 'id=subjectsInput'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
+<msg time="2025-08-22T17:05:48.349040" level="INFO">Typing text '100' into text field 'id=sliderValue'.</msg>
+<arg>id=sliderValue</arg>
+<arg>100</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.100578" elapsed="0.116170"/>
+<status status="PASS" start="2025-08-22T17:05:48.349040" elapsed="0.117491"/>
 </kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.100578" elapsed="0.116170"/>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-08-22T17:05:48.470921" level="INFO">Sending key(s) ('ENTER',) to id=sliderValue element.</msg>
+<msg time="2025-08-22T17:05:48.783031" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-08-22T17:05:48.784048" level="INFO">Releasing special key ENTER.</msg>
+<arg>id=sliderValue</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-08-22T17:05:48.469908" elapsed="1.031010"/>
 </kw>
-<arg>id=subjectsInput</arg>
-<arg>${Subject1}</arg>
-<status status="PASS" start="2025-08-19T14:02:35.100578" elapsed="0.116170"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.216748" elapsed="0.027451"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.247342" level="INFO">Clicking element 'xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"][1]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.246322" elapsed="0.082557"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.246322" elapsed="0.082557"/>
-</kw>
-<arg>xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"][1]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.245273" elapsed="0.083606"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.331220" level="INFO">Typing text 'Ch' into text field 'id=subjectsInput'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.331220" elapsed="0.074257"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.331220" elapsed="0.075267"/>
-</kw>
-<arg>id=subjectsInput</arg>
-<arg>${Subject2}</arg>
-<status status="PASS" start="2025-08-19T14:02:35.329972" elapsed="0.076515"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.406487" elapsed="0.031257"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.438795" level="INFO">Clicking element 'xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"][1]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.438795" elapsed="0.091567"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.438795" elapsed="0.093077"/>
-</kw>
-<arg>xpath=//div[@class="subjects-auto-complete__menu-list subjects-auto-complete__menu-list--is-multi css-11unzgr"][1]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.437744" elapsed="0.094128"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.534438" level="INFO">Clicking element 'xpath=//label[@for="hobbies-checkbox-1"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.533929" elapsed="0.085585"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.532928" elapsed="0.087693"/>
-</kw>
-<arg>xpath=//label[@for="hobbies-checkbox-1"]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.532928" elapsed="0.088502"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.624174" level="INFO">Clicking element 'xpath=//label[@for="hobbies-checkbox-2"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.622985" elapsed="0.082810"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.622985" elapsed="0.082810"/>
-</kw>
-<arg>xpath=//label[@for="hobbies-checkbox-2"]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.621951" elapsed="0.083844"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.707827" level="INFO">Clicking element 'xpath=//label[@for="hobbies-checkbox-3"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.706822" elapsed="0.115030"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.706822" elapsed="0.116169"/>
-</kw>
-<arg>xpath=//label[@for="hobbies-checkbox-3"]</arg>
-<status status="PASS" start="2025-08-19T14:02:35.706822" elapsed="0.116169"/>
-</kw>
-<kw name="Uploadfile" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.827429" level="INFO">Sending C:\Users\User\Pictures\456591.jpg to browser.</msg>
-<arg>${locator}</arg>
-<arg>${file_path}</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.825048" elapsed="0.074813"/>
-</kw>
-<arg>1x</arg>
-<arg>2s</arg>
-<arg>Choose File</arg>
-<arg>${locator}</arg>
-<arg>${file_path}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.823990" elapsed="0.076880"/>
-</kw>
-<arg>id=uploadPicture</arg>
-<arg>C:/Users/User/Pictures/456591.jpg</arg>
-<status status="PASS" start="2025-08-19T14:02:35.822991" elapsed="0.078883"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:35.904918" level="INFO">Clicking element 'id=currentAddress'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.903893" elapsed="0.098803"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:35.903893" elapsed="0.098803"/>
-</kw>
-<arg>id=currentAddress</arg>
-<status status="PASS" start="2025-08-19T14:02:35.902384" elapsed="0.100312"/>
-</kw>
-<kw name="Inputsomething" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:36.005673" level="INFO">Typing text '126/180 Samwar Road Soi8 distinct Khongsamwa BKK. 10510' into text field 'id=currentAddress'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:36.005673" elapsed="0.166445"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Input Text</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:36.003926" elapsed="0.169216"/>
-</kw>
-<arg>id=currentAddress</arg>
-<arg>${Address1}</arg>
-<status status="PASS" start="2025-08-19T14:02:36.003926" elapsed="0.169216"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:36.179695" level="INFO">Clicking element 'id=state'.</msg>
-<msg time="2025-08-19T14:02:37.376066" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-08-19T14:02:37.377076" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class=" css-2b097c-container" id="state"&gt;...&lt;/div&gt; is not clickable at point (419, 831). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff712236b25+79621]
-	GetHandleVerifier [0x0x7ff712236b80+79712]
-	(No symbol) [0x0x7ff711fcc0ea]
-	(No symbol) [0x0x7ff71202af69]
-	(No symbol) [0x0x7ff712028902]
-	(No symbol) [0x0x7ff712025941]
-	(No symbol) [0x0x7ff712024831]
-	(No symbol) [0x0x7ff712016078]
-	(No symbol) [0x0x7ff71204b13a]
-	(No symbol) [0x0x7ff712015926]
-	(No symbol) [0x0x7ff71204b350]
-	(No symbol) [0x0x7ff7120733d0]
-	(No symbol) [0x0x7ff71204af13]
-	(No symbol) [0x0x7ff712014151]
-	(No symbol) [0x0x7ff712014ee3]
-	GetHandleVerifier [0x0x7ff7124f683d+2962461]
-	GetHandleVerifier [0x0x7ff7124f0b5d+2938685]
-	GetHandleVerifier [0x0x7ff71250f71d+3064573]
-	GetHandleVerifier [0x0x7ff712250c6e+186446]
-	GetHandleVerifier [0x0x7ff712258a3f+218655]
-	GetHandleVerifier [0x0x7ff71223f914+115956]
-	GetHandleVerifier [0x0x7ff71223fac9+116393]
-	GetHandleVerifier [0x0x7ff712225ef8+10968]
-	BaseThreadInitThunk [0x0x7ffb1f0de8d7+23]
-	RtlUserThreadStart [0x0x7ffb210bc34c+44]
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-08-19T14:02:36.178695" elapsed="1.370557">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class=" css-2b097c-container" id="state"&gt;...&lt;/div&gt; is not clickable at point (419, 831). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x7ff712236b25+79621]
-	GetHandleVerifier [0x0x7ff712236b80+79712]
-	(No symbol) [0x0x7ff711fcc0ea]
-	(No symbol) [0x0x7ff71202af69]
-	(No symbol) [0x0x7ff712028902]
-	(No symbol) [0x0x7ff712025941]
-	(No symbol) [0x0x7ff712024831]
-	(No symbol) [0x0x7ff712016078]
-	(No symbol) [0x0x7ff71204b13a]
-	(No symbol) [0x0x7ff712015926]
-	(No symbol) [0x0x7ff71204b350]
-	(No symbol) [0x0x7ff7120733d0]
-	(No symbol) [0x0x7ff71204af13]
-	(No symbol) [0x0x7ff712014151]
-	(No symbol) [0x0x7ff712014ee3]
-	GetHandleVerifier [0x0x7ff7124f683d+2962461]
-	GetHandleVerifier [0x0x7ff7124f0b5d+2938685]
-	GetHandleVerifier [0x0x7ff71250f71d+3064573]
-	GetHandleVerifier [0x0x7ff712250c6e+186446]
-	GetHandleVerifier [0x0x7ff712258a3f+218655]
-	GetHandleVerifier [0x0x7ff71223f914+115956]
-	GetHandleVerifier [0x0x7ff71223fac9+116393]
-	GetHandleVerifier [0x0x7ff712225ef8+10968]
-	BaseThreadInitThunk [0x0x7ffb1f0de8d7+23]
-	RtlUserThreadStart [0x0x7ffb210bc34c+44]
-</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:39.550754" level="INFO">Clicking element 'id=state'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:39.549717" elapsed="0.120408"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:36.176687" elapsed="3.493438"/>
-</kw>
-<arg>id=state</arg>
-<status status="PASS" start="2025-08-19T14:02:36.174142" elapsed="3.495983"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//div[@class=" css-11unzgr"]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-08-19T14:02:39.670125" elapsed="0.035231"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:39.707667" level="INFO">Clicking element 'xpath=//div[@class=" css-1n7v3ny-option"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:39.707667" elapsed="0.094215"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:39.706449" elapsed="0.096601"/>
-</kw>
-<arg>xpath=//div[@class=" css-1n7v3ny-option"]</arg>
-<status status="PASS" start="2025-08-19T14:02:39.706449" elapsed="0.096601"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T14:02:40.803624" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T14:02:39.803050" elapsed="1.001627"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:40.810489" level="INFO">Clicking element 'id=city'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:40.808950" elapsed="0.110611"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:40.807949" elapsed="0.111612"/>
-</kw>
-<arg>id=city</arg>
-<status status="PASS" start="2025-08-19T14:02:40.805676" elapsed="0.113885"/>
-</kw>
-<kw name="Click ele" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:40.920575" level="INFO">Clicking element 'xpath=//div[@class=" css-yt9ioa-option"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:40.920575" elapsed="0.081688"/>
-</kw>
-<arg>5x</arg>
-<arg>2s</arg>
-<arg>Click Element</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:40.920575" elapsed="0.081688"/>
-</kw>
-<arg>xpath=//div[@class=" css-yt9ioa-option"]</arg>
-<status status="PASS" start="2025-08-19T14:02:40.920575" elapsed="0.081688"/>
-</kw>
-<status status="PASS" start="2025-08-19T14:02:35.013346" elapsed="5.988917"/>
+<status status="PASS" start="2025-08-22T17:05:48.331703" elapsed="1.170252"/>
 </test>
-<test id="s1-s1-s1-s1-t5" name="Press Submit Form" line="92">
-<kw name="Click but" owner="CommonKeywords">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-19T14:02:41.018984" level="INFO">Clicking button 'id=submit'.</msg>
-<arg>${locator}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T14:02:41.017932" elapsed="0.147069"/>
+<test id="s1-s1-s1-s1-t5" name="Set Slider by simulate" line="46">
+<kw name="Drag And Drop By Offset" owner="SeleniumLibrary">
+<arg>xpath=//input[@type="range"]</arg>
+<arg>30</arg>
+<arg>0</arg>
+<doc>Drags the element identified with ``locator`` by ``xoffset/yoffset``.</doc>
+<status status="PASS" start="2025-08-22T17:05:49.520385" elapsed="0.720955"/>
 </kw>
-<arg>1x</arg>
-<arg>2s</arg>
-<arg>Click Button</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-08-19T14:02:41.017932" elapsed="0.148579"/>
-</kw>
-<arg>id=submit</arg>
-<status status="PASS" start="2025-08-19T14:02:41.016914" elapsed="0.149597"/>
-</kw>
-<status status="PASS" start="2025-08-19T14:02:41.010775" elapsed="0.155736"/>
+<status status="PASS" start="2025-08-22T17:05:49.510654" elapsed="0.730686"/>
 </test>
-<status status="PASS" start="2025-08-19T14:02:09.085176" elapsed="32.088972"/>
+<status status="FAIL" start="2025-08-22T17:05:34.162776" elapsed="16.087566"/>
 </suite>
-<status status="PASS" start="2025-08-19T14:02:09.074670" elapsed="32.112729"/>
+<status status="FAIL" start="2025-08-22T17:05:34.157282" elapsed="16.102186"/>
 </suite>
-<status status="PASS" start="2025-08-19T14:02:09.069244" elapsed="32.133678"/>
+<status status="FAIL" start="2025-08-22T17:05:34.150512" elapsed="16.126377"/>
 </suite>
-<status status="PASS" start="2025-08-19T14:02:09.016827" elapsed="32.196110"/>
+<status status="FAIL" start="2025-08-22T17:05:34.108149" elapsed="16.192246"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
-<stat pass="5" fail="0" skip="0" id="s1-s1-s1-s1" name="Myself01">Webautomate01.Webautomate.Testcase.Myself01</stat>
+<stat pass="4" fail="1" skip="0" id="s1" name="Webautomate01">Webautomate01</stat>
+<stat pass="4" fail="1" skip="0" id="s1-s1" name="Webautomate">Webautomate01.Webautomate</stat>
+<stat pass="4" fail="1" skip="0" id="s1-s1-s1" name="Testcase">Webautomate01.Webautomate.Testcase</stat>
+<stat pass="4" fail="1" skip="0" id="s1-s1-s1-s1" name="Slider">Webautomate01.Webautomate.Testcase.Slider</stat>
 </suite>
 </statistics>
 <errors>

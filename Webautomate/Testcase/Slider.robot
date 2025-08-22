@@ -6,7 +6,11 @@ Variables   ../Resources/Data.yaml
 
 Suite Setup     Open Browser    ${Url}  chrome
 
-
+*** Keywords ***
+Set Slider Value
+    [Arguments]    ${locator}    ${value}
+    ${slider}=    Get WebElement    ${locator}
+    Execute Javascript    arguments[0].value = ${value}; arguments[0].dispatchEvent(new Event('input')); arguments[0].dispatchEvent(new Event('change'));    ${slider}
 
 
 
@@ -30,3 +34,14 @@ Go to Slider
     #//div/span → ลูกตรง ๆ ของ <div> เท่านั้น
     #//div//span → ลูกทุกระดับ (ลูก, หลาน, เหลน) ของ <div>
     
+Set Slider    #1       
+
+    Set Slider Value    xpath=//input[@type="range"]    10
+
+
+Set Slider by input    #2
+    Input Text    id=sliderValue    100
+    Press Keys    id=sliderValue    ENTER
+
+Set Slider by simulate     #3
+    Drag And Drop By Offset    xpath=//input[@type="range"]    30    0
